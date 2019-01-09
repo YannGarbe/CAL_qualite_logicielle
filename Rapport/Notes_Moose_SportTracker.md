@@ -2,6 +2,8 @@
 
 ## Quelques remarques
 
+Vrai rapport : https://docs.google.com/document/d/1HVLd-DDkNB1pTyY0-ifgmar7zflIPM5q8XWdPy0OQGc/edit?usp=sharing
+
 ### Objectif
 
 Faire une analyse du projet. 
@@ -41,7 +43,7 @@ self select: [ :c | c superclass isNotNil and: [c superclass isStub not ] ]
 
 | Contributeur | Nombre d'ajouts | Nombre de suppressions | Nombre de commits |
 | -----------: | :-------------- | :--------------------- | :---------------- |
-| ssaring      |       ++214 267 |              --119 205 |       887 commits |
+| ssaring      |       ++214 388 |              --119 253 |       898 commits |
 | alesjarosch  |           ++365 |                  --100 |         9 commits |
 | ThomasDaheim |           ++151 |                   --92 |         7 commits |
 | eliovir      |           ++496 |                  --466 |         3 commits |
