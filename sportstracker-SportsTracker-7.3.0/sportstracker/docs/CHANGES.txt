@@ -1,0 +1,1497 @@
+Changelog
+---------
+
+v7.3.0:
+ SportsTracker changes:
+  - removed invalid version numbers from french and spanish translations
+  - bugfix #51 for importing HRM exercise files: import duration only, when no
+    distance is being recorded for the selected sport type
+  - Export of all SportsTracker application data to a SQLite database,
+    provides much more capabilities for data analysis, statistics or migration
+    (for advanced users with SQL skills, see README.txt for documentation)
+  - added generic filter for all entry types, note and weight entries are now
+    filterable too (user can select the filter type in the filter dialog)
+  - updated ControlsFX to version 8.40.12
+    (provides bugfixes and solves JDK compatibility issues)
+  - updated JDOM to version 2.0.6 (bugfixes)
+  - updated JUnit to version 4.12
+  - updated Mockito to version 1.10.19
+ ExerciseViewer changes:
+  - Pull Request #9: Improved support for Garmin Fenix (2) exercise files, the
+    missing max speed, avg and max heartrate are now calculated
+    (contributed by Alexander Rampp <alex@axgr.de>)
+  - updated map viewer component JXMapViewer2 to version 2.2 (bugfixes)
+
+v7.2.0:
+ SportsTracker changes:
+  - Native SportsTracker packages are now containing all documentation files
+    (README, LICENSE, CHANGES, AUTHORS, ...)
+  - Native SportsTracker packages are displaying the GPLv2 license text before
+    installation (tested on Mac OS X)
+  - Exercise Dialog: preselection of sport type and subtype when adding new
+    exercises, if there is only one choice
+  - update of ControlFX to 8.40.10 for compatibility to Java 8u60+
+  - updated javafx-maven-plugin to version 8.2.0
+    - simpler inclusion of additional app resources
+    - GPL license is displayed before installation (Mac / Windows)
+    - better UI when opening the DMG package on Mac OS X
+  - use of EasyDI 0.3.0 instead of Guice for dependency injection
+    - much faster startup time (DI takes about 200 msec instead of 700 msec)
+    - much smaller library (6 KByte instead of 2,7 MByte for Guice incl. Guava)
+    - less memory usage after startup (about 10 MByte)
+  - removed cyclic dependencies on STController in all entry views
+  - update of the bundled Java runtime to Java SE/FX 8u77, which contains many
+    bug and security fixes
+ ExerciseViewer changes:
+  - added support for Polar RCX3 HRM files (contains limited data only)
+  - bugfix for parsing FIT files of Garmin Fenix 2 devices (missing max speed)
+    (contribution by Alex Rampp, GitHub pull request #6)
+  - updated Garmin FIT SDK library to version 16.50
+    (improves support for latest Garmin Devices)
+  - Exercise parsers: read device name from exercise files if available
+    (e.g. "Garmin EDGE 520" or "Timex Global Trainer")
+  - Main Panel:
+    - display device name if available
+    - moved 'device name' and 'type' to bottom of 'General Data' section
+  - removed Polar-specific exercise attributes 'type number' and 'user ID' from
+    parser and Exercise Viewer (no usage, very cryptic, e.g. "2")
+ Project changes:
+  - use the Ubuntu Trusty image in Travis CI builds, it contains the latest
+    Java 8 JDK (no workaround installation needed anymore)
+
+v7.1.0:
+ SportsTracker changes:
+  - update of the bundled Java runtime to Java SE/FX 8u45, which contains many
+    bugfixes
+  - removed workarounds for Java versions earlier than 8u40
+  - Exercise, Note and Weight Dialogs: use of one formatted text input for the
+    entry time instead of separate inputs for hour and minute
+    (always ensures valid time values and displayed format)
+  - Overview Dialog: use of a spinner control for the year selection, incl.
+    mouse wheel support
+  - Travis CI: use of latest Oracle Java release (8u45) from 3rd party PPA repo
+    (missing in Ubuntu repository)
+  - update of ControlFX to 8.40.9
+  - added support of HiDPI / Retina displays for all icons and text
+    (all images and icons are now available as @2x-versions)
+ ExerciseViewer changes:
+   - Bugfixes in Diagram Panel (bug #49):
+     - time axis in diagram must always start at 00:00 (the timezone offset
+       needs to be ignored)
+     - display lap markers at proper time positions
+     - display proper formatted time in chart tooltips
+ Translations:
+   - updated french translation by Olivier M. <eliovir@gmail.com>
+
+v7.0.0:
+ SportsTracker changes:
+  - use of no_aop version of Guice 3.0, is smaller and has less dependencies
+  - update of Groovy to 2.4.1
+  - update of JDOM to version 2.0.5
+  - update of SwingX to 1.6.5-1
+  - replaced SwingX-WS 1.0 library by JXMapViewer2 2.0 library
+    - SwingX-WS is not under development anymore
+    - JXMapViewer2 is an active, compatible fork with bug fixes, hosted at:
+      https://github.com/msteiger/jxmapviewer2
+  - switched compiler to Java 8 in module st-exerciseviewer 
+    (already done in all other modules)
+  - use of Java 8 Lambda features in module st-exerciseviewer
+  - bugfix (reported by Doug Harple): adding an exercise via drag & drop of a
+    HRM exercise file is now also possible when there are no exercises yet
+    (a sport type must exist at least)
+  - update to JFreeChart 1.0.19 (and JCommon 1.0.23) which provides JavaFX
+    support
+  - full rewrite of the SportsTracker and ExerciseViewer user interface by
+    using JavaFX instead Swing
+    - user interfaces are now declared in FXML using SceneBuilder
+    - JavaFX provides improved look & feel (not native, same on all platforms)
+    - no more UI problems on Linux (Swing system look & feel was horrible)
+    - use of native file chooser dialogs on all platforms
+  - all SportsTracker dialogs: added instant input validation
+    - all required inputs are marked with a red upper left corner
+    - the OK button is active only when all required user inputs are available
+      and all inputs are valid
+  - Exercise List View:
+    - new table menu in header (+) for simple enabling / disabling table
+      columns
+    - list of optional columns (as configured in Preferences) is now used at
+      application startup only (renamed to 'initial optional fields')
+  - Calendar View: redesigned look (colors, fonts, ...)
+  - Calendar View and Overview Diagram: bugfix for weeknumber calculation
+  - initial set of sport types is added when there are no sport types defined,
+    it makes the setup easier for new application users
+  - new icon set for SportsTracker toolbar and context menus, taken from the
+    Free Version of the IcoMoon project (https://icomoon.io, GPL licensed) or
+    new creations based on the IcoMoon icons
+  - support for Suunto Ambit watches (tested with Ambit2, downloaded GPX files)
+  - Native SportsTracker packages and installers are created during build
+    - implemented in module st-packager (see PACKAGER.txt)
+    - created packages include the Java Runtime Environment (JRE)
+      -> easier setup, users must not install Java anymore
+    - created installers (depending on the build system):
+      - Windows: application package and Inno Setup installer
+      - Mac OS X: application package, DMG and PKG installers
+      - Linux: application package, DEB package (RPM too, not tested)
+  - reduced memory usage:
+    - asynchronous garbage collection is triggered after each closed dialog or
+      changed view (otherwise the JVM prefers to allocate additional heap
+      memory)
+    - maximum heap size of created native packages is limited to 192 MB
+  - faster loading of user data from XML files (about 25%) by using bulk
+    operations for initial list setup
+  - removed external tool polarpersonaltrainer-importer (in directory 'misc'),
+    not in use anymore (import of Polar .ped files is still supported)
+  - About Dialog: added license informations
+  - Help Menu: added menu item for visiting the project website
+ ExerciseViewer changes:
+  - Track Panel: added position slider for replaying the track in the map,
+    a tooltip displays all the details of the current track position
+ Translations:
+  - added korean translation provided by Tae Young Ko <oscetic@gmail.com>
+  - updated french translation pvovided by Nicolas Ollivier
+    <nicollivier@gmail.com>
+  - updated spanish translation provided by Luis Llorente Campo
+    <luisllorente (at) luisllorente (dot) com>
+
+v6.0.0:
+ SportsTracker changes:
+  - switched compiler to Java 8 (except for module st-exerciseviewer)
+  - replaced mocking framework EasyMock 3.2 with Mockito 1.9.5 
+    (much better API and easier to use)
+  - switch to IntelliJ IDEA 13 as project IDE, added project files to VCS
+  - reformated all Java and Groovy source files to common Java source code
+    format guidelines (reformating done by IntelliJ IDEA)
+  - cleanup of import statements in all Java and Groovy source files
+    (done by IntelliJ IDEA)
+  - fixed all compiler warnings
+  - fixed warnings reported by the IntelliJ IDEA Code Inspector
+  - fixed warnings found by IntelliJ IDEA code inspector
+  - removed Java WebStart installation option (since Java 7u40 there were
+    security warnings on each ST start due to missing signed certificates)
+    -> free signed certificates are not available for open source projects
+  - use of Lambda features in module st-util
+  - use of Lambda features in module sportstracker
+  - use new Java Date Time API (JSR 310) in all SportsTracker modules
+    - provides a better API for creation, conversion and formatting
+    - provides type separation of date, time and date time (less errors)
+
+v5.8.0 (not released):
+ SportsTracker changes:
+  - use of new default Mercurial repository after SourceForge project 
+    platform update
+  - update of libraries to recent versions:
+    - update of Groovy to version 2.1.7
+    - update of JFreeChart to version 1.0.15
+    - update of JUnit to 4.11
+    - update of EasyMock to 3.2
+  - update of Maven plugins to recent versions:
+    - update of maven-compiler-plugin to version 3.2
+    - update of groovy-eclipse-compiler to version 2.8.0-01
+    - update of groovy-eclipse-batch to version 2.1.5-03
+    - update of maven-dependency-plugin to version 2.8
+  - successfull tests of SportsTracker with Java 8 EA (build 106)
+ Translations:
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+
+v5.7.0:
+ ExerciseViewer changes:
+  - update of Garmin FIT SDK to version 4.20 (for parsing FIT files)
+  - support for Garmin Forerunner 910XT exercises (Feature request #3578651)
+    => there are still minor problems in exercises with sport type 
+       transitions, e.g. for triathlon) 
+  - Timex Ironman Run Trainer PWX support (bug report #3599059):
+    - added support for Timex Ironman Run Trainer PWX exercises, calculation
+      of missing statistic data
+    - unit test for Timex Ironman Run Trainer PWX files
+  - proper error handling when ExerciseViewer parsers fail to read an exercise
+    file (displays an error message dialog and prints error details to the 
+    console)
+ Translations:
+  - updated spanish translation by Luis Llorente Campo
+    <luisllorente@luisllorente.com>
+  - updated german translation by Stefan Saring
+
+v5.6.0:
+ SportsTracker changes:
+  - Findbugs bugfixes in all modules (minor code improvements)
+  - Mac OS X application bundle creation: 
+    - The huge JRE is not included anymore, the app size is now 12 MByte 
+      instead of 67 before. Since JDK 7u6 for OS X the launcher is able to find
+      the installed JRE (needs to be installed!)
+    - The appbundler Ant library is now included, no installation needed.
+  - Java WebStart for Mac OS X is working again, when JDK / JRE 7u6 or later
+    is installed.
+  - Overview Dialog: improved weight graph (SF feature request #3554633):
+    Missing weight values will be interpolated instead of set to 0.
+  - Calendar View: (SF feature request #3082257):
+    current day is better recognizable by using a different color (blue for
+    weekdays, red/orange for sundays)
+  - Overview Dialog:
+    - new diagram mode for sport subtype overview of a selected sport type
+      (shows the distances per sport subtype of one sport type)
+    - new diagram mode for equipment usage overview of a selected sport type
+      (shows the distances per equipment of one sport type)
+    - bigger size, much more readable (still fits on 1024x768 displays)
+  - update to Groovy 2.0.1, usage of new Groovy features
+    - use only the required Groovy modules instead of groovy-all dependency
+      => the Groovy libraries are now about 3 MByte smaller
+    - use of the new Groovy-Eclipse compiler plugin for Maven (2.7.0_01)
+    - usage of the new @TypeChecked type checking at compilation time in all
+      Groovy unit tests, type errors are now found immediately
+    - usage of the new @TypeChecked type checking makes no sense for the
+      Groovy exercise parsers, the dynamic XML parsing features can't be used
+      anymore
+  - update of JDOM library to version 2.0.2
+ ExerciseViewer changes:
+  - Garmin TCX Parser: Fix for SourceForge-Bug #3551583 
+    (Fail to parse tcx files with laps without altitude)
+  - Track Panel: added tooltips to all track points, so the track can now be
+    followed easily on the map. The tooltips show:
+    - track point number, time, distance
+    - altitude, heartrate, speed, temperature (if available)
+ Translations:
+  - updated german translation by Stefan Saring
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+
+v5.5.0:
+ ExerciseViewer changes:
+  - Bugfix in the Timex PWX exercise parser (occurs e.g. on Timex Ironman GPS 
+    T5K444 after installing a firmware update)
+ SportsTracker changes:
+  - update of JDOM library from version 1.1.3 to 2.0.1, (API changes)
+    - supports generics now, unchecked-warnings doesn't need to be suppressed 
+      anymore
+  - Maven project in Eclipse IDE: ignoring the maven-dependency-plugin in the
+    Eclipse lifecycle => no more error messages
+  - exclusion of Java WebStart (javaws.jar) dependency in BSAF, so Maven build
+    now works for JDK 7 on Mac OS X
+  - all Dialogs are now always placed centered relative to their parent 
+    windows (doesn't make sense to restore the previous position when the 
+    parent has been moved)
+  - Bugfix for Mac OS X: all Dialogs were always placed in upper left corner
+    now centered relative to their parents
+  - Toolbars in Mac OS X: 
+    - all buttons are now displayed in OS X toolbar style
+    - rollover effects in Calendar view are disabled
+  - Ant script for Mac OS X App bundle creation (located in misc/appbundler)
+  - New HiRes SportsTracker application icon, old LowRes icon looked ugly in
+    larger toolbars or application switchers (mostly on Mac OS X, Windows 7)
+  - SportsTracker icon is available in many sizes, it's needed for different
+    window and dock sizes depending on the operating system and user settings
+    (automatic scaling looks ugly)
+  - Execise file existence check after application startup. A warning dialog 
+    displays all exercises where the attached files can't be found.
+  - Toolbars: no focus painted for buttons anymore, was strange behavior  
+  - updated signature keys for Java Webstart installation (old keys will 
+    expire in 2013)
+
+v5.4.0:
+ SportsTracker changes:
+  - switch to Java 7 compiler, so new language features can be used
+    (so users also need Java 7 for SportsTracker execution)
+  - use of new Java 7 language features (Project coin)
+    - use of try-with-resources statements, fixes many error handling bugs
+    - use of diamond operator for Gernerics type inference
+    - use of multicatch for similar exceptions handling
+    - use of new Objects class for hashcode computation
+  - Exercise, Note and Weight dialog: dialogs can be closed with Escape key
+    when the focus is on the date picker component (initial focus)
+  - SF Feature Request 2927194: copy entries (exercises, notes, weights)
+    - user can simply copy entries from the context or main menu, he only
+      needs to enter the new date
+  - All Exercise, Note and Weight actions (add, edit, copy):
+    => select the edited entry in the current view when action is completed
+       (bigger refactoring for automatic view updates after data changes)
+  - Use of @Override annotation instead of {@inheritDoc} in all classes, 
+    so implementation errors can be detected by the compiler
+  - Refactoring in all Exericse/Notw/WeightListView: move the similar methods
+    to BaseListView base class
+  - Exercise / Note / Weight List View: context menu on right mouse click for 
+    adding, editing, copying and deleting the selected table entry
+  - Maven build: update to groovy-eclipse-compiler 2.5.2 which
+    - adds support for Eclipse 3.7.1
+    - adds support for Java 7
+    - needs less custom configuration in pom.xml
+  - added Windows icon for custom launcher configurations (st-logo.ico)
+  - XMLStorageTest: cleanup of temporary files after test run
+  - removed lots of compiler warnings (mostly for serialization issues) 
+  - update of JFreeChart to version 1.0.14
+  - update of Groovy to version 1.8.6
+  - update of SwingX to version 1.6.3
+  - update of JDOM to version 1.1.3
+  - update of MiGLayout to version 3.7.4
+  - update of JUnit to version 4.10  
+ ExerciseViewer changes:
+  - GPX parser (TopoGrafixGpxParser) extensions provided by Alex Wulms 
+    <awulms@users.sourceforge.net>: 
+    - added heartrate support and speed & distance calculation
+    - added support and unit tests for Garmin Oregon and HOLUX FunTrek devices
+  - README: documentation for device support of W Kalenji 300 and CW Kalenji 
+    700 (when using http://code.google.com/p/kalenji-gps-watch-reader/)
+
+ Translations:
+  - updated spanish and basque translations by Asier Urio Larrea
+    <asieriko@gmail.com>
+   
+v5.3.0:
+ ExerciseViewer changes:
+  - SF Bug #3203396: TopoGrafixGpxParser: parse GPX files with missing 
+    timestamps in track metadata
+ SportsTracker changes:
+  - update to Guice 3.0 (final)
+  - Weight dialog: when adding new entries, initialize it with weight
+    from previous entry
+  - update to BSAF 1.9.2 (contains many bugfixes, comes now from the
+    central Maven repository)
+  - Groovy updated to 1.8.0
+  - Maven build: use of groovy-eclipse-compiler for mixed Java/Groovy 
+    compilation (GMaven is outdated for Groovy 1.8.0 and m2e)
+    => ST project can't be opened in Eclipse 3.7, there are problems with
+       the recent m2e and Groovy-Eclipse plugins
+  - EasyMock updated to version 3.0 (performs class mocking directly)
+  - tested SportsTracker with Java 7, no problems
+
+v5.2.0:
+ SportsTracker changes:
+  - added IntelliJ IDEA project files to Mercurial ignore list 
+    (IDEA can now also be used for development)
+  - update to BSAF 1.9 GA (final), which contains many bugfixes, also for the 
+    Command+Q-Shutdown problem on MacOS X
+  - update to JUnit 4.8.2
+  - update to Guice 3.0 (RC2)
+    - use of standardized javax.inject annotations (JSR 330) for Dependency 
+      Injection (so the DI Container could be easily exchanged)
+    - Guice API is only used for DI Container setup
+  - Groovy updated to version 1.7.6
+  - SportsTracker has been successfully tested on Java SE 7 (Developer 
+    preview release), it compiles and runs without any problems
+    
+ ExerciseViewer changes:
+  - bugfix in GarminFitParserTest (date comparision fails on other timezones
+    than Europe/Berlin)
+  - TopoGrafix GPX v1.1 support (SourceForge Feature request #1910611)
+    - contains mostly track data only, but also supports optional time and 
+      altitude data 
+  - Main panel: display only available data and "n.a." otherwise 
+    (instead of 0 when missing)
+  - Timex PWX support (by Robert Schultz <schultzr@users.sourceforge.net>):
+    - added support for Timex Ironman Global Trainer PWX exercises, including
+      GPS data (displayed in Track panel) and cadence data
+    - unit test for Timex Ironman Global Trainer PWX files
+  
+ Translations:
+  - updated spanish translation by Luis Llorente Campo
+    <luisllorente@luisllorente.com>
+
+v5.1.0:
+ SportsTracker changes:
+  - updated to SwingX 1.6.1 (DatePicker improvements)
+  
+ ExerciseViewer changes:
+  - Garmin FIT Parser (support for Garmin FIT activity files):
+    - full support for all data which can be shown in ExerciseViewer
+      (summary, lap data, sample data, track/map data, temperature data)
+    - unit tests for GarminFITParser
+  - ConvertUtils: new conversion method from semicircles to degrees
+  - Lap class extension: atty for geographical position at lap split
+    - parsed and stored in the Garmin FIT and TCX parser  
+  - TrackPanel: draw "S" next to start and "E" next to end waypoint
+  - TrackPanel: draw white waypoint circles for each lap split position
+  - TrackPanel: draw lap number next to each lap split waypoint
+  - TrackPanel: waypoint circles and their texts have a dark border,
+    so they are also visible on backgrounds with same color
+  
+v5.0.0:
+ General changes:
+  - CHANGE TO MAVEN BUILD SYSTEM (not Ant-based anymore)
+    - Maven multi project: split into modules for strict separation,
+      wrong module dependencies are not possible anymore
+    - Current Maven modules:
+      - sportstracker:
+        Main application component.
+      - st-exerciseviewer: 
+        Component for parsing and displaying HRM exercise files (was named
+        PolarViewer before, but support now many other devices too)
+      - st-util:
+        Component with common util classes for calculation, UI and more
+      - st-parent:
+        Parent component with common plugin configuration and dependencies
+    - Dependency Jars are not part of the source archive anymore, they
+      will be downloaded automatically in the build process
+    - Setup of a Maven repository at http://saring.de/st-maven-repo/ for BSAF
+      and current JFreeChart (they are missing in Maven central repository)
+    - GMaven plugin in build process:
+      - Groovy classes can be used in all modules, also for tests
+      - Groovy classes are now stored in own groovy source directories
+      - Groovy and Java code can have circular dependencies
+      - Groovy tests are executed automatically in test phase
+        (AllGroovyTest wrapper class not needed anymore)
+    - documentation of Maven usage in README.txt
+  - CHANGE TO MERCURIAL DISTRIBUTED VERSION CONTROL SYSTEM
+    - the initial Mercurial repository contains the latest SVN trunk 
+      (version 4.2.1)
+    - the SVN history was not imported to Mercurial repository (would be
+      too much revisions, also from Mono/.NET past) 
+      => start with a lean repository
+    - the SVN repository will stay online at SourceForge for accessing all
+      history revisions
+    - future commits will go all to Mercurial repository, not to SVN anymore
+    - SCM documentation in README.txt
+
+ SportsTracker changes:
+  - All dialogs can now be closed by pressing the Escape key
+  - PolarPersonalTrainer-Importer (command line utility in misc-directory),
+    contributed by Philippe Marzouk <philm@users.sourceforge.net>
+    - users of PolarPersonalTrainer.com can import the exercises of export
+      files (extension .ped) into the SportsTracker exercises.xml database
+  - Ant script for signing JAR files for Java WebStart (located in 
+    sportstracker/misc/webstart/build.xml)
+ 
+ PolarViewer/ExcerciseViewer changes:
+  - PolarViewer has been renamed to ExerciseViewer, because it supports much more 
+    heart rate monitor manufacturers than Polar (was the case at beginning)
+    - changed package name de.saring.polarviewer to de.saring.exerciseviewer
+    - all PolarViewer resource keys and texts/translation has been renamed
+    - rename in all documentations (also in source code)
+    - all PV* classes has been renamed to EV* (e.g. PVDocument -> EVDocument) 
+  - PolarPedParser, contributed by Philippe Marzouk <philm@users.sourceforge.net>:
+    - ExerciseParser for export files (.ped extension) from PolarPersonalTrainer.com
+      (imports basic exercise data, no laps and sample data)
+  - Exercise samples with dynamic timestamps (needed for support of many 
+    heratrate monitors, e.g. for Garmin TCX exercises):
+    - new atty ExerciseSample.timestamp 
+      => offset in 1/1000 sec from Exercise start
+    - ExerciseSample.timestamp is set in all ExerciseParser implementations
+    - Sample and Diagram panel are using the ExerciseSample.timestamp for 
+      displaying sample data
+  - Garmin TCX Parser:
+    - support for parsing lap (Lap) and sample (Trackpoint) data, including
+      unit tests (parses the speed, distance, altitude and cadence)
+    - added some cadence test data to Edge705-Running-Heartrate-2Laps.tcx
+      (doesn't make sense for running exercises, but test data is needed)
+    - parses and stores the GPS location data  (incl. checks in unit tests)
+  - Track Panel for displaying the track of the exercise inside a map:
+    - new class Position class stores the GPS location data, 
+      is an optional atty in ExerciseSample  
+    - new flag EVExercise.RecordMode.location, it's true when GPS data
+      is available
+    - new class TrackPanel (named "Track"), it displays the track in a map
+      component (JXMapKit from SwingX-WS with OpenStreetMap backend) 
+    - TrackPanel displays a label for missing data if there's no track data
+    - track/map feature documentation in README.txt     
+  - Timex PWX exercise file support 
+    - contributed by Robert Schultz <schultzr@users.sourceforge.net>
+    - tested with Timex Ironman Race Trainer, could work with others too
+    - implementation of TimexPwxParser, unit tests and example files
+      (initial release, does not parse all available data yet)
+   
+    
+v4.2.1 (no public release, internal marker only):
+ SportsTracker changes:
+  - Better Swing Application Framework 1.9 RC4 replaces Swing Application
+    Framework 1.03 (the SAF project has no progress)
+    - BSAF contains many bugfixes and improvements
+    - BSAF Jar is much smaller, swing-worker.jar is not needed aynmore
+  - JUnit updated to version 4.8.1
+  - MiGLayout updated to version 3.7.3.1 and bugfixes in MigLayout usage
+  - Groovy updated to version 1.7.2
+  - EasyMock updated to version 2.5.2
+  - downgrade to JDOM 1.1 because 1.1.1 is not available in Maven
+    repositories (1.1.1 doesn't have critical bugfixes)
+  - Eclipse project configuration updates
+
+v4.2.0:
+ SportsTracker changes:
+  - Eclipse project update to Eclipse 3.5 and Groovy-Eclipse 2.0.0
+     => much better Groovy integration, all parsers and tests are now 
+        running within the IDE)
+  - Groovy updated to 1.7.0
+  - fixed all Eclipse 3.5 compiler warnings
+  - Overview Dialog: 
+    - Diagram type "last 12 months":
+      - display current month and 12 months before (in total 13 months)
+        (good for compare current month and the one from year before)
+      - show only month names on bottom axis (year not required, space
+        is not sufficient)      
+    - fixed all deprecated JFreeChart usages (also in PolarViewer) 
+  - new tool: sportstracker-importer 0.5 (added to 'misc' directory)
+    - done for importing all your Polar HRM files at once
+    - created by Jiri Polcar <polcar@physics.muni.cz>
+  - MacOS X support improvements and bugfixes, contributed by Mathias Obst
+    <luettfite@users.sourceforge.net>:
+    - the name of the application is set in the application menu bar
+    - all SportsTracker menus appear in the global applications menu panel
+    - the SportsTracker logo is set as application dock icon
+    - the SportsTracker info box is accessible by application menu About item
+    - the SportsTracker preferences are accessible by application menu
+      Preferences item
+    - Accelerators (shortcuts) use Cmd key mask
+    - Bugfix: if SportsTracker is exited by application menu Quit item or
+      Cmd+Q accelerator, data changes will be saved or asked to save
+
+ PolarViewer changes:
+  - Garmin TCX exercise file support (initial version)
+    (feature requests #1511988 and #1687728)
+    - parser implementation, unit tests and test files
+    - PolarViewer now displays TCX files
+    - SportsTracker now imports exercise data from TCX files 
+
+v4.1.1:
+ SportsTracker changes:
+  - updated to JDOM 1.1.1 (bugfixes)
+  - updated to SwingX 1.6 (full Nimbus L&F support and Java SE 6 optimzed)
+  - updated NetBeans project files to NetBeans 6.8
+ PolarViewer changes:
+  - SF Bug #2926797: bugfix for parsing date in Polar SRD exercise files
+    (parsed year was 2016 instead of 2010)
+ Translations:
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+  - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+
+v4.1.0:
+ SportsTracker changes:
+  - update to JFreeChart 1.0.13 (contains bugfixes and new features,
+    e.g. the diagram charts can now be copied to the clipboard)
+  - update to Guice 2.0 for dependency injection (includes aopalliance.jar)
+  - Exercise List View (patches by Remco den Breeje <remco@vioco.nl> and
+    improvements and enhancements by Stefan Saring <projects@saring.de>):
+    - user can now configure in the Options Dialog which optional exercise
+      fields (avg heartrate, ascent, energy, comment) are shown in the list
+    - column order can now be changed in the list view
+  - SwingX updated to version 1.0 (many bugfixes)
+  - Groovy updated to 1.6.3
+  - updated SportsTracker project to NetBeans 6.7 (final)
+  - added mouse wheel support in hour and minute spinner controls in
+    Exercise, Note and Weight dialogs (initiated by Frank Besler
+    <frank.besler@gmail.com>, refactored by Stefan Saring)
+  - SF Bug #2471304: bugfix in Exercise Dialog when checking relation
+    between distance, avg speed and duration
+  - documentation updates (ReadMe.txt)
+  - Eclipse project update
+
+ Translations:
+  - updated dutch translation by Eric Spierings <ericspierings@netscape.net>
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+  - updated german translation by Stefan Saring <projects@saring.de>
+
+v4.0.0:
+ SportsTracker changes:
+  - bugfix in Calendar view tooltips (SF Bug #2471304):
+    speed (km/h) instead of pace (min/km) gets displayed
+  - SwingX updated to version 0.9.5, my bugreport #750 was fixed there
+    (antialiasing in the month view of the date picker) => my workaround can
+    be removed (custom org.jdesktop.swingx.plaf.basic.BasicMonthViewUI)
+  - refactoring: 
+    - IdObjectList:set(): no boolean return value anymore
+    - ExerciseList:set(): replaced by IdDateObjectList:set() (much simpler)
+  - new class IdDateObject which adds the attribute 'date' to IdObject
+    - base class for all ID-objects with a timestamp
+    - Exercise class now uses IdDateObject
+  - new class IdDateObjectList which stores objects sorted by date
+    - ExerciseList class now uses IdDateObjectList, no custom set()
+      required anymore
+    - unit tests for storing in IdDateObjectList
+  - new IdObjectListChangeListener for observing list content changes for
+    sport types, exercises, nots and weights
+    => so STDocument must only register for these lists and must not act as a
+       proxy for all list modification functions
+       => much STDocument code has been removed
+       => STDocument:setDirtyDate() not needed anymore
+  - IdDateObjectList: method for getting entries in a time range + module test
+  - unit tests for IdObjectListChangeListener
+  - XMLStorage refactoring:
+    - move the reader and writer code to one class for each list type
+    - use same reader / write instances instead of always creating new ones
+    - util class XMLUtils for common XML functions => no more code duplicates
+  - correct clone() implementation in data classes SportType, SportSubType and
+    Equipment => unit tests for clone implementation
+  - update to new JFreeChart 1.0.12 (bugfixes)
+  - Calendar View:
+    - highlight the current day with bold font (will not be selected by default
+      anymore)
+    - action "Select today" only selects the month of the current date
+    - only one calendar entry can be selected, not the calendar cells anymore
+      (the selection rectangle is only drawed behind the selected entry)
+      => the CalendarCellExerciseListDialog is not needed anymore (deleted
+         with all its resources)
+      => all actions in CalendarView are now also available when one day cell
+         has multiple entries (much better usability)
+    - class CalendarEntry can now contain any IdDateObject types
+    - simpler Drag & Drop of HRM files: will be dropped to the exercise under
+      the mouse cursor (now also possible when a calendar cell contains
+      multiple entries)
+    - refactoring: split of huge drawCalendar() into multiple methods
+    - popup menu on right mouse clicks for all the entry actions 
+      (add, edit, delete)
+  - documentation for all views in the README.txt
+  - SportsTracker menu improvements:
+    - "Edit Exercise" renamed to "Edit Entry", works for all entry types
+    - "Delete Exercise" renamed to "Delete Entry", works for all entry types
+  - fixed all compiler warning for wrong usage of Java generics
+  - Overview Dialog:
+    - refactoring: updateDiagram() was splitted to multiple methods (was huge)
+    - diagram content selection widgets are now hidden instead of disabled when
+      not in use
+  - new icon graphics for calendar, list views and add entry actions
+    (modified icons from the Gnome and Tango projects)
+  - support for Note and Weight entries:
+    - new classes Note and NoteList for note entries and Weight and WeightList
+      for body weight entries in the calendar (based on IdDateObject and
+      IdDateObjectList)
+    - XSD schemas for Note and Weight XML and XML test files
+    - XMLNoteList and XMLWeightList for reading and writing notes and weights
+      from or to XML files
+    - unit tests for XMLNoteList and XMLWeightList
+    - new Note List and Weight List views for displaying all note and weight
+      entries (similar to Exercise List view)
+    - new abstract class BaseListView which contains common functionality for
+      all list views
+    - use of BaseListView for ExerciseListView (no more redundant code)
+    - new convert and format methods for weight values including unit tests
+      (FormatUtils and ConvertUtils)
+    - Note and Weight entries are displayed in Calendar View
+      => can be edited by double clicking them
+    - new menu and toolbar items "Add Note" and "Add Weight"
+    - new Note dialog for adding or editing note entries 
+    - new Weight dialog for adding or editing weight entries
+    - Overview Dialog: new Weight graph for the selected time range
+    - documentation of Note and Weight entry usage in the README.txt
+  - STController: check for existing entries of the proper type before printing
+    an list view
+  - use of java.util.logging API instead of System.out/error
+    (more detailed, can be redirected to files or something else)
+  - update to Groovy 1.6.0 => tons of bugfixes and performance improvements
+    => JSR 223 Scripting Engine is now included, groovy-engine.jar is not
+       needed anymore
+
+ PolarViewer changes:
+  - Contribution by Remco den Breeje <remco@vioco.nl>:
+    Support for Polar S510 RAW files (maybe also for S410 and S520, untested)
+    - new HSR raw file parser, unit tests and test files
+    - HSR raw files can be downloaded via the SonicRead tool
+      (http://code.google.com/p/sonicread)
+  - Bugfix #2535591: support for HRM files of Polar CS600
+    (files must be downloaded on Windows)
+
+ Translations:
+  - updated german translation by Stefan Saring <projects@saring.de>
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+  - updated polish translation by Zbigniew Ogledzki <zgibek@gazeta.pl>
+  - updated spanish and basque translations by Asier Urio Larrea
+    <asieriko@gmail.com>
+  - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+
+v3.6.0:
+ SportsTracker changes:
+  - drag & drop of HRM exercise files to the calendar view, successfully
+    tested on Linux (Gnome 2.24 and KDE 4.1) and Windows (XP)
+    => now much easier to import/assign lots of HRM files
+    => check usage instructions in the ReadMe
+  - Calendar view: tooltips for all displayed exercises (contain more
+    informations, the calendar cell has not too much space)
+  - update to new JFreeChart 1.0.11 (bugfixes)
+    - improved axis layout and font usage
+  - diagram bugfix: use always the same font as the parent componment
+    (otherwise there are BIG fonts on Win32 systems) 
+  - update to Groovy 1.5.7 (bugfixes)
+  - updated project to NetBeans 6.5 (older versions not supported anymore)
+    - Groovy support in the IDE out of the box (not perfect but very helpful)
+      (Syntax highlighting, code completion, debugging)
+  - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+  - fixed all Eclipse warning for wrong generics usage, ...
+  - library directory improvements
+    - renamed folder libs to lib (consistent with created dist directory)
+    - lib folder contains only libraries required for the application
+    - new lib/test folder contains only libraries for test classes
+    - new lib/build folder contains only libraries for the build script
+  - added ANT build file 'build-no-netbeans.xml' for building and testing
+    SportsTracker on systems with no NetBeans installation or for users of
+    other IDE's
+  - Eclipse project:
+    - removed all duplicate resource warnings for .svn-subdirectories
+
+ PolarViewer changes:
+  - Diagram Panel: diagram chart will now be correctly redrawn when screen
+    size changes (it was just scaled before)
+
+v3.5.0:
+ SportsTracker changes:
+  - new interface STContext and implementation class for distribution of
+    all GUI-related dependencies to all application components (it also 
+    contains the SwingApplicationFramework context and convinience methods)
+  - use of Guice 1.0 for dependency injection - the benefits are:
+    - no more static singleton access (STMain.getInstance(),
+      STMain.getDocument(), STMain.getView(), ...)
+    - all components only get access to the inserted components, this
+      this prevents invalid/unwanted component dependecies
+    - refactoring: move of document- and view-functionality from the 
+      sub-components and the dialogs to STController class
+      => much less dependencies, all components are better testable
+    - move of FormatUtils from STView to STContext, now they can be
+      accessed from everywhere without the STView dependency
+    - CalendarCellExerciseListDialog: removed STDocument dependencies
+    - use of Guice Provides's to create dialogs with dependency injection
+      (in AboutDialog, ExerciseDialog, OptionsDialog, FilterDialog,
+      StatisticDialog, OverviewDialog, SportTypeListDialog, SportTypeDialog,
+      HRMFileOpenDialog, StatisticResultsDialog, CalendarCellExerciseListDialog)
+    - disadvanteges of Guice usage (not dramatic): SportsTracker needs almost 
+      1 sec longer at initial start and uses 2,5 MByte more memory 
+      (Spring would not be better)
+      => application performance has not changed after startup
+  - STDocument, STView and STController are now encapsulated by interfaces, so 
+    they can be simply replaced for unit testing (e.g. by mock objects)
+  - Refactoring ResourceHelper: 
+    - renamed to ResourceReader
+    - not static anymore, can be accessed by all components from STContext
+  - Refactoring STMessageDialog:
+    - removed this class, message and confirmation dialogs can now be 
+      created in STContext
+      => no more static access, so the STContext / the dialogs can be 
+         replaced by mocks in unit tests
+  - Refactoring HRMFileOpenDialog: no static access anymore
+  - Refactoring: New interface ExerciseView for all view implementations,
+    so the views can be mocked in unit tests. It also contains the ExerciseView
+    enumeration from STView, it's now called ViewType.
+  - added EasyMock 2.4 library for unit testing
+  - example unit tests for STController:deleteExercise()
+    => now very easy possible via dependency injection and mocking
+    => basis for tests when adding new features/bugfixes
+  - Options Dialog: configuration of the default automatic calculation type
+    in the Exercise Dialog (distance, avg speed or duration)
+  - Printing support:
+    - List view: print table of displayed exercises (confirmation dialog
+      when there are too many exercises displayed)
+    - Calendar view: prints the calendar of the selected month and year
+    - unit tests for printing in STController
+  - Nimbus Look&Feel improvements for the date picker widget (JXDatePicker 
+    from SwingX project)
+    - draw the Nimbus focus border when the textfield gets the focus
+    - display a better dropdown-icon (still not the original Nimbus one
+      but does not look so terrible anymore)
+    - use antialiased text in the month view component
+  - bugfix of text antialiasing in the JXDatePicker (from SwingX project)
+    - bugfix in custom BasicMonthViewUI, will hopefully be included in 
+      SwingX 0.9.4 => DatePickerUtils workarounds were removed
+   - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+   - Sourceforge Feature request #2106264: Optional command line parameter
+     '--datadir' for setting a custom application data directory. 
+     Example for storing data in the installation directory: 
+     'java -jar SportsTracker.jar --datadir=.'
+  - SwingX updated to version 0.9.4 (the JAR is 250 kByte smaller). My
+    DatePickerAddon bugfix (bug #913) was included => workaround removed.
+
+- PolarViewer changes:
+  - use of Guice for dependency injection (same as for SportsTracker)
+    - new context interface PVContext (just a subset of STContext)
+    - no more (static) central access via PVMain in all components
+    - all components only get the dependecies they are need
+    - the PVOptions are now stored in PVDocument
+    => less code after all changes 
+  - contributions by Roland Hostettler <r.hostettler@gmx.ch> for the 
+    Polar F6 exercise parser: 
+    - support for percental heartrate ranges
+    - support for Polar F11 exercise files, including unit tests
+      (file download requires version 0.0.3 of the f6-split-tool)
+
+v3.4.2:
+ SportsTracker changes:
+  - rollover effect buttons in the Calendar View toolbar, works on all 
+    look & feels (adopted from the jEdit project - www.jedit.org)
+  - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+  - SwingX updated to version 0.9.3 (bugfixes)
+  - JFreeChart updated to version 1.0.10 (bugfixes)
+ PolarViewer changes:
+  - contribution by Kai Pastor <dg0yt@users.sourceforge.net>:
+    support for Oregon Scientific SmartSync WM100 exercise files (CSV format)
+    (display files in PolarViewer and import exercise data) 
+
+v3.4.1:
+ SportsTracker changes:
+  - bugfix: exceptions in Sport type list dialog when no sport types defined
+
+v3.4.0:
+ SportsTracker changes:
+ - redesigned Exercise dialog for usability improvements, it is now better 
+   understandable for new users - the changes are:
+   - vertical arrangement of sport type, sport subtype and intensity comboboxes
+     => label and combobox are on one line and the combobox texts can be longer
+   - vertical arrangement of distance, avg speed and duration textfields
+     => no more "Calculate ..." buttons (was very confusing), there's an
+        "Automatic Calculation" checkbox for each textfield instead
+     => so the user can choose which value will be calculated automatically on
+        change of the other values (distance, avg speed or duration)
+   - vertical arrangement of optional ascent, heartrate and calories textfields
+     => label and textfield are on one line, better readability
+   - HRM: the Import and View buttons are now below the HRM filename textfield
+     => HRM filename textfield displays longer filenames better and the Import
+        and View buttons got better (longer) names
+   - the hour and minute inputs now select their text when they get the focus
+     (so the time can be entered much faster)
+  - redesigned Options dialog for usability improvements:
+    - splitted into 3 panels: Main, Units and PolarViewer
+      => number of options increases all the time, only one panel gets too big
+      => more simple for the user to find an option when they are grouped
+    - vertical arrangement of the radiobox widgets (more consistent)
+    - use Monday and Sunday radiobox widgets for week start
+    - better text resources for unit settings (with example units)
+  - Look&Feel selection in the Options dialog: the user can choose one of all
+    the available look and feels, it will be changed at runtime without restart
+    (so e.g. the great new Nimbus Look&Feel can be used with Java 6 UpdateN)
+  - Calendar view: use of Home icon instead of Today button (more consistent)
+  - Sport Type dialog: use of better understandable text resources (some with
+    examples) and tooltips for descriptions
+  - use of tag {@inheritDoc} do avoid documentation duplicates
+  - project files updated for NetBeans 6.1
+    - the project now uses the new NetBeans Library feature, no problems with
+      with absolute library file locations anymore
+  - Groovy updated to version 1.5.6
+  - SwingX updated to version 0.9.2
+  - JUnit updated to version 4.4, bugfixes in unit tests
+  - check the complete project with FindBugs => fixed a lot of problems
+  - bugfix: proper error handling when creating application directory
+  - all ST and PV data classes are now final
+  - added Eclipse project files (Eclipse 3.3 + Groovy plugin)
+  - increased list cell height and table row height in all views and dialogs
+    (was too compressed)
+  - layout bugfixes in SportsTracker and PolarViewer when using the Nimbus L&F
+  - contributions by Kai Pastor <dg0yt@users.sourceforge.net>:
+    - Overview Dialog improvements: 
+      - dialog shows the last 12 months by default
+      - added stacked view for all sport types (transparent graphs)
+      - tooltips show sport type
+      - fixed ticks
+
+v3.3.0:
+ SportsTracker changes:
+  - new Polish translation contributed by Zbigniew Ogledzki <zgibek@gazeta.pl>
+  - updated to SwingX version 2008_02_03, the GTK-L&F bug for the data picker
+    has been fixed (https://swingx.dev.java.net/issues/show_bug.cgi?id=667)
+  - bugfix: workaround for using antialiasing in the date picker widgets 
+    (month view) when using GTK-L&F
+  - bugfix in Exercise dialog: correct tab focus order in Exercise Data panel
+  - updated to Groovy 1.5.4 (bugfix release)
+  - new baseclass IDObject for all SportsTracker data classes (they all need 
+    unique IDs)
+  - new generic class IDObjectList which contains unique instances of IDObject
+    subclasses and provides usefull management methods (until now each data 
+    object with lists had this functionality)
+  - unit tests for IDObject and IDObjectList
+  - the classes Exercise, SportType, SportSubtype and Equipment are now 
+    subclasses of IDObject => less code needed
+  - the classes ExerciseList and SportTypeList now extend IDObjectList, so all
+    the list management functionality was removed, also in the test classes
+    => no more "deep nested" method calls to get sport types or exercises
+  - the SportSubType list and the Equipment list in the SportType class are now
+    using IDObjectList, so all the list management functionality was removed, 
+    the SportTypeListTest class is not needed anymore
+  - STView now stores the list of exercises to be displayed (can also be the 
+    filtered list), the benefits are:
+    - the list is not stored in every view anymore, no more duplicate problems
+      or deleted exercise references
+    - less memory consumption (e.g. 1,3 MByte less for 1.400 exercises)
+    - better performance, the list is only filtered once on data changes
+  - ask the user for defining sport types when there are no available (better
+    usability at intial startup)
+ PolarViewer changes:
+  - contribution by Roland Hostettler <r.hostettler@gmx.ch>:
+    support for displaying Polar F6 exercise files in PolarViewer and import
+    the data from exercise files when adding new exercises
+  - bugfix for SourceForge bug#1897208: no more JFreeChart exceptions in the
+    Diagram panel when the exercise contains laps with same time second value
+  - SourceForge feature request #1900878: percentual heartrate range support:
+    - added abolute and percentual range support in class HeartRateLimit
+    - Main panel: display percentual range values (e.g. 60 - 80 %)
+    - Diagram panel: the current heartrate range is not displayed for 
+      percentual ranges (not possible, maximum heartrate is unknown)
+    - unit test for parsing SRD exercises with percentual heartrate ranges
+
+v3.2.0:
+ SportsTracker changes:
+  - Overview Diagram:
+    - new time mode: display statistic values for all the weeks of the selected 
+      year (modes before: 'months of year' or 'last 10 years until')
+    - use of the new JFreeChart API (deprecated renderer methods)
+  - Exercise Dialog: use of JXDatePicker (from SwingX project) for easy date
+    selection and spinner widgets for easy time selection
+  - Filter Dialog: use of JXDatePicker (from SwingX project) for easy date
+    selection
+  - Filter Dialog bugfix: use of the end of the day for the filter end date,
+    otherise the exercises of the last day will not be included
+  - Calendar View bugfix: show correct week number (of current year) when week 
+    starts on sunday
+  - Exercise Dialog: redesigned user interface, splitted into separate tabs 
+    for main data, optional data and comment. The advantages are:
+    - so there's enough space for future additions
+    - many users only use the main data, so they are not bothered by all the
+       other widgets
+  - Options Dialog: removed the "always display optional exercise data" option,
+    it is not needed anymore
+  - updated french translation by Nicolas Ollivier <nicolas.ollivier@neuf.fr>
+  - updated to Groovy 1.5.1 (no exception workarounds in test classes needed
+    anymore)
+  - Equipment tracking support:
+    - added equipment support to the data (SportType, Exercises), filter 
+      and XML storage classes (and unit tests for all of them)
+    - SportTypeDialog: the user can assign equipment to sport types (e.g. bikes
+       for cycling or shoes for running)
+    - ExerciseDialog: the user can assign the used equipment in exercises
+    - Filter-/StatisticDialog: the user can filter exercises for specific 
+      equipment => so the user can e.g. check the total running distance for
+      specific shoes
+  - Exercise Dialog: button for copy the comment from previous similar 
+    exercises (with same sport type and subtype) => saves a lot of typing
+  - Calendar View: improved look by using color gradients in calendar view
+    (weekname line, background, summary, selection)
+  - Calendar View: buttons for year, month selection does not have borders
+    anymore on Windows XP and Metal (Swing default) Look&Feel
+  - Exercice and Overview Dialog: use same height for spinner widgets as 
+    controls in same line (date picker or comboboxes)
+  - added local JUnit 4.1 Jar, so there's no NetBeans library dependency for
+    command line build anymore (or when NetBeans is not installed)
+  - update to JFreeChart 1.0.9 (bugfixes)
+  - history of resource (I18N) changes in I18N.txt (helpfull for translation
+    updates)
+- Translations:
+   - updated german translation by Stefan Saring <projects@saring.de>
+   - updated dutch translation by Eric Spierings <ericspierings@netscape.net>
+   - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+   - updated french translation by Nicolas Ollivier <nicollivier@gmail.com>
+
+v3.1.0:
+ SportsTracker changes:
+  - Bug#1825620: typo fixes in default (english) text resources
+  - Bug#1825615: resizing the PolarViewer dialog can not hide buttons anymore
+    (minimum size was set to the preferred size)
+  - no error message at first application start (only shown on real problems
+    when reading XML data)
+  - update to JFreeChart 1.0.7 and JCommon 1.0.12 (lot of bugfixes)
+  - updated to JDOM 1.1 (bugfixes and minor perfomance improvements)
+  - the file chooser dialog for exercise files always starts in the previous
+    selected directory (also after SportsTracker was restarted)
+ PolarViewer changes:
+  - Refactoring:
+    - new ExerciseParser interface (was an abstract class before)
+    - new AbstractExerciseParser class with common functionality for all parser
+      implementations
+  - Exercise parser plugin system: ExerciseParserFactory now uses the
+    ServiceLoader for lookup the appropriate exercise parser implementation
+    - no direct coupling between the factory and the parser implementations
+      anymore
+    - new parser implementations can be added just by adding the parser-Jar to
+      the application classpath (no changes in SportsTracker required)
+ 
+v3.0.0:
+ ----------------------------------------------------
+ - PORT OF THE COMPLETE APPLICATION FROM C# TO JAVA -
+ ----------------------------------------------------
+ - use of JFreeChart for all diagrams, the major advantages are: 
+   - better visualization and labels
+   - free zoomable 
+   - print of diagrams and save as image
+   - tooltips for displaying graph values
+   -   - bugfix for SourceForge bug#1624457 (for RS200SD exercises): 
+    Diagram panel displays now AVG instead of end speed for laps
+highlighted value points in graph for better readability (in the 
+     Overview Diagram)
+ - easier installation of the Java version, via Java WebStart or by using the
+   binary version (Mono/C# version was published as source package only)
+ - I18N works now on all systems (in Mono only in Linux)
+ - much better performance in list view (Mono/GTK problems when many exercises)
+ - much better performance in filtered views
+ - List view: starts with descending sort of the date column (newest on top)
+ - PolarViewer lap and sample panel: sorting for all table columns
+ - multiple PolarViewer can now be opened for exercise comparison
+   (bugfix, all dialogs have displayed the same exercise)
+ - additional unit tests
+ - SportsTracker translations:
+   - new german translation by Stefan Saring <projects@saring.de>
+   - new dutch translation contributed by 
+     Eric Spierings <ericspierings@netscape.net>
+   - new spanish and basque translations by 
+     Asier Urio Larrea <asieriko@gmail.com>
+   - new french translation by Nicolas Ollivier <nicolas.ollivier@neuf.fr>
+   - new czech translation by Petr Marcik <marcikp@seznam.cz>
+
+------------------------------------------------------------------------
+
+v2.5.1:
+ PolarViewer changes:
+  - Bug#1694513: HRM parser can now read exercises without lap data
+    (e.g. from Polar S510)
+  - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+  - contribution by Vicente Blanco <vblanco@users.sourceforge.net>:
+    workaround for Mono bug in Cairo drawing (no diagram graph in
+    PolarViewer) => build needs gtk-sharp >= 2.8.0 
+
+v2.5.0:
+ SportsTracker changes:
+  - Overview dialog: when an exercise filter is enabled then
+    the graphs only include the filtered exercises
+    => so it's possible to create graphs dependent on sport 
+       subtypes, comments, intensity, ...
+  - Filter dialog: added "All Time" button for selecting exercises 
+    of all the time
+  - Bug#1688305: added missing mkdir's in Makefile
+  - updated german translation
+ PolarViewer changes:
+  - HAC4 parser improvements by Ilja Booij <ibooij@gmail.com>:
+    - support of 2, 5 and 10 sec recording intervals
+      => so HAC5 and HAC4Pro exercise files are supported 
+    - correct parsing when exercise notes were added in HacTronic
+    - additional unit test for a HAC5 exercise file
+
+v2.4.2:
+ SportsTracker changes:
+  - feature request #1620202: default intensity is 'normal' when
+    adding new exercises
+  - Execise dialog: the distance/speed/duration validation has now
+    a tolerance of 10 seconds. This avoids error messages for valid
+    input values when speed is shown in minutes/distance units.
+  - contribution by Gary Ekker <gekker@users.sourceforge.net>:
+    configurable calendar weekday start (monday or sunday)
+  - improvements in calendar weekday start code and use of the
+    configured start weekday when computing the current week 
+    dates in the filter dialog
+  - updated german translation
+ PolarViewer changes:
+  - bugfix for SourceForge bug#1624457 (for RS200SD exercises): 
+    Diagram panel displays now AVG instead of end speed for laps
+  - bugfix in RS200SD parser: use speed 0 for AVG and MAX lap speed
+    instead of convert it to distance/hour (was infinite before)
+
+v2.4.1:
+ SportsTracker changes:
+  - updated dutch translation contributed by 
+    Eric Spierings <ericspierings@netscape.net>
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - Statistic dialog: correct size for timespan 
+    - use of FormatUtils for heartrate and altitute text creation 
+  - updated german translation
+ PolarViewer changes:
+  - bugfix for SourceForge bug#1608042: 
+    improved compatibility for displaying HAC4 TUR files 
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - Lap data of exercises was extended by average lap speed
+    - RS200SD parser reads the avarage lap speed
+    - Lap panel: display the avarage lap speed
+  - SRD raw and HRM parser: calculation of average lap speed
+
+v2.4.0:
+ SportsTracker changes:
+  - initial dutch translation contributed by 
+    Eric Spierings <ericspierings@netscape.net>
+  - contributions by Stefan Meissner <stefmeissner@gmx.de>
+    - Exercise dialog: preselect sport type and subtype when only
+      one type or subtype is available
+    - Exercise dialog: round calculated distance and average speed to 
+      maximum 3 digits
+  - Exercise List: added average heartrate column and units to
+    distance and average speed columns (by Jacob Ilsø Christensen
+    and Stefan Saring)
+  - SF request# 1544241, by Jacob Ilsø Christensen and Stefan Saring:
+    Configurable speed unit view: speed data can be viewed in 
+    distance/hour (e.g. cyclists) or minutes/distance (e.g. runners)
+    => all dialogs and diagrams have been enhanced  
+  - POT-File update now accepts UTF-8 source files (Makefile) 
+  - updated german translation
+  - correct loading of translation files from the locale directory
+    relative to the installation directory, no more exceptions and
+    workaround on startup (e.g. loaded from /usr/local/share/locale
+    when installed in /usr/local 
+  - updated Win32 scripts for application compile and start
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - Statistics Result dialog: more Gnome HIG compliant 
+    - Overview dialog: display speed in minutes/distance when enabled
+    - Overview dialog: use of history diagram for the sum of all
+      sport types, provides much better overview then the line graph
+ PolarViewer changes:
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - new FormatUtils method for formating speed and temperature 
+      informations instead of custom formating in each GUI panel
+    - use of new FormatUtils SpeedToString() and DistanceToString() 
+      methods in many places => removes a lot of duplicated code
+    - unit tests for FormatUtils methods
+    - PolarViewer panels are now more Gnome HIG compliant (no borders,
+      bold headers, ...) 
+    - keyboard shortcut CTRL+H for PolarViewer start
+  - contribution by Jos Dehaes <joske@users.sourceforge.net>:
+    - configurable option for display always the second diagram graph
+      when data is available (feature request #1555838)  
+
+v2.3.0:
+ SportsTracker changes:
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - SportType dialog: focus by default in name text field
+    - SportSubType dialog: focus by default in name text field and Enter
+      key has same function as OK button
+    - XML parsers: schema validation fix (for sport types and exercises)
+    - SportType and SportSubType dialog: bugfix for autoconnecting
+      event handlers for double clicks, has crashed on some systems
+    - SportType, SportSubType and Options dialog: Gnome HIG compliant
+      label texts
+    - Options Dialog is renamed and placed under Edit->Preferences in 
+      menu (GNOME HIG compliant)
+    - labels in Exercise Dialog are now GNOME HIG compliant
+    - added AssemblyInfo class with application informations
+    - About dialog: version is read from AssemblyInfo class
+    - Exercise Filter dialog: more GNOME HIG compliant and added tooltips
+    - MonoDevelop project: ST project builds by default in the solution
+    - STView: use of pluralization in internationalization (I18N)
+  - updated Win32 compile and run scripts (for use of Cairo)
+  - CalendarCellExerciseList Dialog: bugfix for crash with newest Gtk#
+    versions (at least on Win32 systems)
+  - Refactoring in Exercise class: It contains now real references to 
+    the associated SportType and SportSubType classes instead of ID's. 
+    Allmost all classes and test classes has changed. 
+    The advantages:
+    => No more mapping functions on every access => code reduction,
+       less duplicated and faster code and less errors.
+    => No more additional validation after loading XML data needed
+       => faster startup with huge data and less error handling.
+  - Refactoring in ExerciseFilter class: use of SportType and 
+    SportSubType references instead of ID's.
+    => No more mapping required in filters, statistics and overview
+       diagrams. Code reduction and less duplicated code.
+  - The objects Exercise, SportType and SportType have an overwritten
+    equals-method now, so the Collections-API can be used properly.
+  - Overview diagram: new display mode for exercise count of all sport
+    type (sum) or each sport type
+  - updated german translation
+  - Refactoring by Jacob Ilsø Christensen and Stefan Saring:
+    - unification of formating and conversion code in SportsTracker 
+      and PolarViewer
+    - new FormatUtils class for unit system based and time based
+      value formating 
+    => much less code duplication in all GUI dialogs and panels
+ PolarViewer changes:
+  - rewritten Diagram panel which uses the Cairo API now
+    => looks much better, Antialiasing support
+    => much simpler event handling
+    => better visible vertical lap and horizontal heartrate range lines
+    => use of continuous line drawing in Cairo for diagram graphs
+  - contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - bugfix in Polar RS200SD parser for reading lap distance
+    - bugfix in DiagramPanel for Polar RS200SD files: laps are now 
+      displayed correctly when bottom axis is in distance mode
+    - improved conversion of themperature data to the unit system to
+      be shown in all panels
+    - PolarViewer now uses conversion methods of SportsTracker, so
+      duplicated code has been removed
+    
+v2.2.0:
+ SportsTracker changes:
+  - new feature: specify for each sport type wheather the distance needs
+    to be recorded or not => so all kind of sport are supported now
+    - sport-types.xsd is enhanced by the atty "record-distance"
+      => updated parser and unit tests
+    - SportType dialog: new "record distance" option (only editable
+      when no exercises for this sport type exists)
+    - Exercise dialog: distance and AVG speed inputs are disabled when
+      distance is not recorded for selected sport type
+    - Calendar page: don't displays distance when not recorded for the 
+      sport type
+    - Statistic calculation: include also exercises without distance
+    - updated usage instructions in README.txt
+  - the installation creates a starter in the system menu (.desktop file)
+    (make sure that MONO_DIR in the Makefile is correct for your system)
+  - updated czech translation by Petr Marcik <marcikp@seznam.cz>
+  - updated german translation
+ PolarViewer changes:
+  - bugfix for diagram crashes when Polar RS200SD files contain no speed 
+    data, the speed mode is now deactivated when distance is 0
+    (reported by Jos Dehaes, SourceForge bug# 1524834)
+  - diagram improvements for Polar RS200SD without speed data
+  - all lap data is displayed in a table instead of displaying one lap
+    => better overview and the data is easy comparable
+    (patch by Jos Dehaes <joske@users.sourceforge.net> and improvements
+     by Stefan Saring)
+  - bugfix provided by Dave Frielink <dave@cs.pdx.edu>:
+    the SRD RAW file parser sometimes crashed because of AM/PM problems
+
+v2.1.0:
+ SportsTracker changes:
+  - overview diagram: stop the graph line at the current month/year
+    (it was falling to zero before although there can't be exercises yet)
+  - updated spanish translation by Asier Urio Larrea <asieriko@gmail.com>
+  - updated french translation by Stéphane Raimbault
+    <stephane.raimbault@free.fr>
+ PolarViewer changes:
+  - better visible vertical lap lines (dashed, green) in the diagram
+  - tooltips in the diagram when the cursor is above a lap line, they
+    display the current lap number, time and distance
+    (suggestion by Tino Kissig <tino.kissig@gmx.de>)
+  - bugfixes by Berend De Schouwer <berend.deschouwer@ucs-software.co.za>:
+    - improved Polar SRD raw file parsing 
+      (detection of lap and sample data start independent of Polar model)
+    - improved Polar S725X compatibility
+  - contribution by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - diagram panel now also displays speed data in english unit mode
+
+v2.0.0:
+ SportsTracker changes:
+  - full integration of latest PolarViewer version into SportsTracker, 
+    PolarViewer is not a standalone application anymore
+  - new menuitem "File->Open in PolarViewer" for viewing HRM files
+    not assigned to an exercise
+  - removed the configuration for external HRM viewer application from 
+    Options dialog
+  - added contributors of PolarViewer application to SporsTracker About
+    dialog
+  - integrated all PolarViewer tests into SportsTracker
+  - removed workarounds for Mono/Gtk# bug #74946 
+    (manual event handler registration instead of AutoConnect)
+  - all dialogs have usefull default buttons now (OK or Close)
+  - updated Win32 compile- and run-Batch files for integrated PolarViewer
+  - merged SportsTracker and PolarViewer translations for german, spanish
+    and italian
+  - updated german translation
+ PolarViewer changes:
+  - workaround for a compiler bug in Mono 1.1.14
+  - Contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - exercise duration is now stored and displayed in tenth of
+      seconds (used on many new Polar models, e.g. the RS200SD)
+    - footpad handling in RS200SD parser
+    - the RS200SD parser now uses XML exercise files instead of binaries
+      (these files can be downloaded by using Jani Hurstis tool at
+       http://sourceforge.net/projects/rs200-decoder)
+    - the Diagram panel now displays herartrate and speed graphs for
+      RS200SD exercise files (based on laps instead of samples) 
+  - HRM parser now also supports HRM files of version 1.07
+    (doesn't work with exercise files created by the SL2HRM tool, 
+    they have a corrupted HRM format)
+  - bugfix in PolarRs200SdParserTest.cs
+
+v1.2.2 (never released officially):
+  - added option for automatically save data on application exit
+    (feature requests #1448051)
+  - workaround for a compiler bug in Mono 1.1.14 in all view classes
+  - replaced all [Glade.Widget] attributes with [Glade.WidgetAttribute]
+    in all view classes (Glade.Widget is a base class not to be used)
+  - Contributions by Jacob Ilsø Christensen <jacobilsoe@gmail.com>:
+    - fixes for typos
+    
+v1.2.1:
+  - integration of NPlot 0.9.9
+  - use of antialiasing in overview diagram
+  - workaround for bug in Mono >= 1.1.13.2, application has crashed
+    internationalization init at startup
+    (reported by Felipe Lessa, bugzilla ID #1438971)  
+  - german translation update
+  
+v1.2.0:
+  - new column for week summary in Calendar view
+    (displays distance and duration summary for all exercises of week)
+  - use of UTF-8 encoding in XML data files
+    (there were problems with languages such as czech)
+  - czech translation made by Petr Marcik <pmarcik@volny.cz>
+  - updated german translation
+
+v1.1.1:
+  - MonoDevelop-Project: updated references for MonoDevelop >= 0.8
+  - Contributions by Frank Besler <besfred@gmx.net>:
+    - initial version of status bar text for selected exercises
+  - improvements for status bar text (now in both views, round)
+  - updated Win32 batch files for compile and start (with Mono 1.1.10)
+  - integration of PolarViewer 1.3.0, now it's also possible to import
+    data from Ciclosport HAC4 TUR exercise files
+  - file extension filter in "Open exercise file" dialog
+  - updated german translation
+
+v1.1.0:
+  - MonoDevelop-Project: updated references to GTK# 2.4.0 (since 2.3.90)
+  - Makefile: start of unit tests with included NUnit assemblies
+  - Fixed bug #1286559: problems at first application start on Win32 
+    (reported by jurgenr)
+  - GTK# 2.5.X compatibility: rename of AboutDialog to STAboutDialog
+    (reported by Eugenia Loli-Queru <eugenia@osnews.com>)
+  - Contributions by Stephane Raimbault <stephane.raimbault@free.fr>:
+      - usage of import Mono.Unix instead of deprecated Mono.Posix
+      - Makefile improvements 
+        (I18N processing for translation update and install)
+      - updated french translation
+      - updated spain translation (UTF-8)
+      - updated I18N documentation
+      - use of GNOME icon for Help->Info
+  - Contributions by Frank Besler <besfred@gmx.net>:
+      - storing of calorie consumption for exercises (optional),
+        added in Exercise dialog and XML persistence
+  - import of calorie consumption from Polar files (Exercise dialog)
+  - added calorie consumption to statistic dialog and overview diagram
+  - added calorie consumption to unit tests  
+  - updated german translation (UTF-8)
+  - feature requests #1193144 completed
+  - selection of current day in calendar at startup
+
+v1.0.1:
+  - removed unused widgets from code
+  - Makefile improvements (removed deprecated compiler options)
+  - removed workaround for Win32-Mono bug #74930, fixed in Mono 1.1.8
+  - new UML diagrams for use cases and class structures done
+    with Poseidon CE (www.gentleware.com)
+  - spelling fixes in GUI 
+    (reported by Stephane Raimbault <stephane.raimbault@free.fr>)
+  - Contributions by Frank Besler <besfred@gmx.net>:
+    - scrolling with wheelmouse in calendar view (next/previous month)
+  - french translation made by Stephane Raimbault 
+    <stephane.raimbault@free.fr>
+
+v1.0.0:
+  - changed all frames in GUI to be compliant to GNOME Human Interface
+    Guidelines (HIG) => better overview for user
+  - new Overview Diagram dialog which displays sums of users exercise 
+    data (distance, duration, ascent, AVG) in a diagram for each sport 
+    type (splitted) or the sum - the time range is either all months of
+    a year or last 10 years until specified year  
+    (use of the great NPlot library for creating the diagram)
+  - integration of PolarViewer 1.2.1 (Polar S725 support)
+  - Win32 support:
+    - updated scripts for using with Mono 1.1.7 installer
+      (mono can be used instead of mint now, no .config file anymore)
+    - storing of application options works now (bug in Mono was fixed)
+    - workaround for overview diagram creation using temporary files
+  - Makefile: installation of locale files with correct access rights
+  - Makefile: correct installation of NPlot.dll
+  - spanish translation made by Asier Urio Larrea <asieriko@gmail.com>
+  - updated german translation
+
+v0.7.1:
+  - usage of Mono.Posix.Catalog instead of custom Catalog class, it's
+    standardized and has better support for Win32
+  - bugfix: proper file handling on reading/writing options file
+  - full suport for Win32, documentation in Install-Win32.txt
+  - added project files for MonoDevelop 0.6.x
+  - improved clean target in Makefile
+  - removed compiler warnings found by Mono 1.1.6
+  - bugfixes for stock-item-problems with libglade > 2.5.0
+  - use of ExerciseFilter class instead huge parameter list for passing
+    filter criterias 
+  - added new FilterDialog which is for filtering exercises displayed
+    in calendar or list view
+  - added filter toolbar and menu items (for enable/disable)
+  - the filter criterias of FilterDialog are stored in STDocument, on
+    next dialog start they will be preselected again 
+  - the specified filter criterias in FilterDialog are reused in 
+    Statistic dialog
+  - rewritten StatisticDialog which just displays current filter and
+    starts FilterDialog if the user wants to choose another filter 
+  - updated test cases for changes in Mono 1.1.6 and Filter changes
+  - Contributions by Frank Besler <besfred@gmx.net>:
+      - use of expander widget in Exercise dialog, which can hide the
+        optional inputs when the user doesn't use them    
+      - keyboard shortcut for Home-button (Pos1 key)
+  - OptionsDialog: added an option for always display optional exercises
+    data (initial expander state in exercise dialog)
+  - italian translation update by Alessandro Frigeri <afrigeri@unipg.it>
+  - update of german translation
+  
+v0.7.0:
+  - usage of GTK# 1.9.2 (bindings for GTK+ 2.4), because modern distributions
+    provide libglade 2.4.0, but GTK# 1.0.0 only works with libglade >= 2.2.0
+    correct
+  - update of glade file to glade 2.6.0 (required for GTK# 1.9.2)
+  - proper stock icon handling in toolbars for GTK# 1.9.2
+  - replaced all OptionMenu with ComboBox widgets (OptionMenu is deprecated
+    since GTK+ 2.4)  
+  - exercise dialog: no preselections for sport type, subtype and intensity
+    (it was often forgotten to set, now the user is forced to select)
+  - usage of new GTK# 2.4 FileChooser dialog
+  - bugfix in Makefile (install) by Blindauer Emmanuel <mdk@agat.net>
+  - use of Gtk calendar widget for date selection in exercise and
+    statistic dialog
+  - double click in calendar opens "Add exercise" dialog  
+  - included test framework NUnit 2.2 (not part of Mono anymore)
+  - extended About dialog with contributor and translator names
+  - remeber window size at exit and use same size at next startup
+  - list of involved people in AUTHORS.txt
+  - created SportsTracker project site at SourceForge.net
+  - Contributions by Frank Besler <besfred@gmx.net>:
+      - use of color selection dialog (problems with old version) in sport 
+        type dialog instead of RGB textfields 
+      - sorting in exercise list now works for all columns
+  
+v0.6.3:
+  - bugfix: open exercise files in PolarViewer with space characters in name
+    (reported by <matthias.beck@comteam.at>) 
+  - integration of PolarViewer 1.1.1 with improved support for HRM files
+  - all dialogs will be placed in center of application window (transient)
+
+v0.6.2:
+  - integration of PolarViewer 1.1.0 with support for Polar S610(i) SRD files
+  - translation updates
+  - start directory in exercise file dialog is '/var/polar' if it exists
+    (standard file directory of the s710 tool)
+  
+v0.6.1:
+  - italian translation added, done by Alessandro Frigeri <afrigeri@unipg.it>
+  
+v0.6.0:
+  - integration of PolarViewer parsers (v1.0.0) for importing exercise data
+    from HRM (better then enter all recorded values by hand) 
+  - no more problems with values in english unit mode (e.g. when the user has
+    entered 25 miles he has seen then 24,999999 miles)
+  - use of application icon in all dialogs
+  - menu and toolbar items for HRM file view (no need to click through dialogs)
+  - table sorting in list view (for text columns only)
+  - no more GUI "jumping" when changing the month in calendar view
+  
+v0.5.0:
+  - tooltips for toolbar
+  - bugfix in Makefile for locale installation
+    (directory /de/LC_MESSAGES was created)
+  - all testcases: use of new Assert class and methods in NUnit 2.1.91
+    (the other are deprecated) and fixes for Mono 1.0
+  - shorten too long comments in exercise table (otherwise there are
+    multiline table rows)
+  - refactoring: the STView contains multiple page components for different
+    views of the exercises 
+  - refactoring: cleanup and structuring in namespaces Dialogs and Pages
+  - added Calendar view, which shows all exercises of one month
+  - navigation functions for displayed month in Calendar view
+  - dialog for exercise selection in Calendar view for actions on day cells
+    with multiple exercises 
+  - the initial view can be configured in Options dialog
+  - updated german translations
+  - bugfixes in file selection dialog (Cancel / Escape button)
+  - new SportsTracker icon, inspired by Eugenia Loli-Queru <eloli@hotmail.com>
+  - custom icons for menu and toolbar (edit, calendar, statistic) 
+  - "make clean" removes all unnecessary MonoDevelop files
+  - cleanup of project directory
+
+v0.4.1:
+  - removed workaround for Gtk# bug 58229 (it was fixed)
+  - changes in Makefile, it works now with Mono Beta 2 (0.95)
+  - Makefile: uninstall task
+  - internationalization support using gettext
+    (using the Catalog class from Edd Dumbill <edd@usefulinc.com>)
+  - Makefile: tasks for creation of i18n files (pot, gmo)
+  - german translation of SportsTracker
+  - removed SportsTracker.GuiSwf classes
+
+v0.4.0:
+  - initial public release
+  - created README.txt file with installation and usage help
+  - added workaround for Gtk# bug 58229, different sport types are
+    having their own colors in list again
+  - switchable unit system (metric and english)
+  - exercise statistic can be created with a substring filter for the 
+    comments of the exercises (normal and regular expression mode)
+    => this allows creation of statistics for e.g. special tour routes,
+       which are described in comments (requested by Steffen Rehn)
+
+v0.3.2:
+  - statistic calculation displays also minimum values 
+    (same as avarage and maximum) 
+  - Mono bug 564848 was fixed in Mono 0.91 => workaround removed
+  - fixed compile and Makefile problems with mono / gtk-sharp 0.91
+  - save menuitem / button are only enabled when there were data changes
+  - project file for using the MonoDevelop IDE
+
+v0.3.1:
+  - fixed validation of distance, avg-speed and duration in exercise dialog
+  - toolbar cleanup
+  - display comments in list view
+  - bugfix in Makefile for some distributions
+
+v0.3.0: 
+  - initial pre-release

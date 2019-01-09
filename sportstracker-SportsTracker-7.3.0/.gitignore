@@ -1,0 +1,28 @@
+# use glob syntax
+syntax: glob
+
+*.class
+*.log
+*.swp
+.#*
+.DS_Store
+st-export.sqlite
+
+# ignore Maven build directories and Eclipse, IDEA, Netbeans project files
+target
+.classpath
+.project
+.settings
+.idea
+*.iml
+*.ipr
+*.iws
+nbactions.xml
+
+# switch to regexp syntax
+syntax: regexp
+\.orig$
+\.orig\..*$
+\.chg\..*$
+\.rej$
+\.conflict\~$

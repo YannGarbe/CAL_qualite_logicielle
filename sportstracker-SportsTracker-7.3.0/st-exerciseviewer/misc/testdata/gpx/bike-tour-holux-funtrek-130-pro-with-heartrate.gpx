@@ -1,0 +1,2299 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="HOLUX GM-130" version="1.1">
+<metadata>
+<link href="http://www.holux.com"><text>HOLUX Technology, Inc.</text></link>
+<time>2011-11-03T09:48:29Z</time>
+</metadata>
+<trk>
+<name>T00111103090925</name>
+<desc></desc>
+<extensions>
+<mode>training</mode>
+<start>2011-11-03T09:09:25Z</start>
+<stop>2011-11-03T09:48:29Z</stop>
+<tripdist>14104.6</tripdist>
+<triptime>2344</triptime>
+<movetime>2245</movetime>
+<minspeed>0.00</minspeed>
+<maxspeed>14.50</maxspeed>
+<minele>99.0</minele>
+<maxele>226.0</maxele>
+<varele>-75.0</varele>
+<ascent>112.3</ascent>
+<descent>187.3</descent>
+<co2>3328.6</co2>
+<trees>0.2</trees>
+<calorie>397895.4</calorie>
+<displacement>10591.9</displacement>
+<ptnum>2345</ptnum>
+<weight>65.0</weight>
+<record mode="time" time="1" />
+<bounds minlat="49.98620167" maxlat="50.03888833" minlon="36.22041139" maxlon="36.34852167" />
+<training minhr="133" maxhr="151" mincad="80" maxcad="99" minutes="1440" />
+<created>2011-11-03T09:48:29Z</created>
+<padding>Do NOT modify this document manually! Do NOT modify this document manually! Do NOT modify this document manually! Do NOT modify this document manually! </padding>
+</extensions>
+<trkseg>
+<trkpt lat="49.99012500" lon="36.34850472">
+<ele>224.0</ele>
+<speed>0.50</speed>
+<time>2011-11-03T09:09:25Z</time>
+<extensions>
+<ele src="gps">185.8</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">0.50</speed>
+<bpm>81</bpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99012000" lon="36.34850333">
+<ele>224.0</ele>
+<speed>0.30</speed>
+<time>2011-11-03T09:09:26Z</time>
+<extensions>
+<ele src="gps">186.2</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">0.30</speed>
+<bpm>81</bpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99011472" lon="36.34850167">
+<ele>223.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:27Z</time>
+<extensions>
+<ele src="gps">186.4</ele>
+<ele src="bar">223.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>82</bpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99011139" lon="36.34850333">
+<ele>224.2</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:28Z</time>
+<extensions>
+<ele src="gps">186.4</ele>
+<ele src="bar">224.2</ele>
+<speed src="gps">0.00</speed>
+<bpm>83</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99010667" lon="36.34850472">
+<ele>224.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:29Z</time>
+<extensions>
+<ele src="gps">186.2</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>84</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99010333" lon="36.34850833">
+<ele>225.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:30Z</time>
+<extensions>
+<ele src="gps">185.9</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>84</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99009833" lon="36.34851167">
+<ele>225.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:31Z</time>
+<extensions>
+<ele src="gps">185.5</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>84</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99009500" lon="36.34851667">
+<ele>225.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:32Z</time>
+<extensions>
+<ele src="gps">185.1</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>84</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99009000" lon="36.34851972">
+<ele>225.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:33Z</time>
+<extensions>
+<ele src="gps">184.6</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>84</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99008667" lon="36.34852167">
+<ele>225.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:09:34Z</time>
+<extensions>
+<ele src="gps">184.1</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>90</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99008000" lon="36.34851500">
+<ele>225.0</ele>
+<speed>0.86</speed>
+<time>2011-11-03T09:09:35Z</time>
+<extensions>
+<ele src="gps">183.3</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">0.86</speed>
+<bpm>90</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007333" lon="36.34849500">
+<ele>225.0</ele>
+<speed>1.88</speed>
+<time>2011-11-03T09:09:36Z</time>
+<extensions>
+<ele src="gps">182.7</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">1.88</speed>
+<bpm>90</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007000" lon="36.34846500">
+<ele>225.0</ele>
+<speed>2.55</speed>
+<time>2011-11-03T09:09:37Z</time>
+<extensions>
+<ele src="gps">181.9</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">2.55</speed>
+<bpm>90</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007000" lon="36.34842667">
+<ele>225.0</ele>
+<speed>3.11</speed>
+<time>2011-11-03T09:09:38Z</time>
+<extensions>
+<ele src="gps">180.8</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">3.11</speed>
+<bpm>108</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007167" lon="36.34837167">
+<ele>225.0</ele>
+<speed>4.36</speed>
+<time>2011-11-03T09:09:39Z</time>
+<extensions>
+<ele src="gps">179.6</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">4.36</speed>
+<bpm>114</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007333" lon="36.34830472">
+<ele>225.0</ele>
+<speed>5.19</speed>
+<time>2011-11-03T09:09:40Z</time>
+<extensions>
+<ele src="gps">178.3</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">5.19</speed>
+<bpm>123</bpm>
+<rpm>106</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99007000" lon="36.34822306">
+<ele>225.0</ele>
+<speed>6.16</speed>
+<time>2011-11-03T09:09:41Z</time>
+<extensions>
+<ele src="gps">177.0</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">6.16</speed>
+<bpm>123</bpm>
+<rpm>108</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99006500" lon="36.34813806">
+<ele>225.0</ele>
+<speed>6.47</speed>
+<time>2011-11-03T09:09:42Z</time>
+<extensions>
+<ele src="gps">175.7</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">6.47</speed>
+<bpm>123</bpm>
+<rpm>82</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99006167" lon="36.34805333">
+<ele>224.5</ele>
+<speed>6.36</speed>
+<time>2011-11-03T09:09:43Z</time>
+<extensions>
+<ele src="gps">174.4</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">6.36</speed>
+<bpm>131</bpm>
+<rpm>82</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99006167" lon="36.34796333">
+<ele>224.2</ele>
+<speed>6.66</speed>
+<time>2011-11-03T09:09:44Z</time>
+<extensions>
+<ele src="gps">173.3</ele>
+<ele src="bar">224.2</ele>
+<speed src="gps">6.66</speed>
+<bpm>134</bpm>
+<rpm>86</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99005972" lon="36.34786667">
+<ele>224.0</ele>
+<speed>7.13</speed>
+<time>2011-11-03T09:09:45Z</time>
+<extensions>
+<ele src="gps">172.6</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">7.13</speed>
+<bpm>134</bpm>
+<rpm>88</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99005667" lon="36.34776972">
+<ele>224.7</ele>
+<speed>7.02</speed>
+<time>2011-11-03T09:09:46Z</time>
+<extensions>
+<ele src="gps">171.8</ele>
+<ele src="bar">224.7</ele>
+<speed src="gps">7.02</speed>
+<bpm>137</bpm>
+<rpm>87</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99005167" lon="36.34767472">
+<ele>225.5</ele>
+<speed>6.97</speed>
+<time>2011-11-03T09:09:47Z</time>
+<extensions>
+<ele src="gps">171.1</ele>
+<ele src="bar">225.5</ele>
+<speed src="gps">6.97</speed>
+<bpm>139</bpm>
+<rpm>88</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99005167" lon="36.34757500">
+<ele>225.7</ele>
+<speed>7.19</speed>
+<time>2011-11-03T09:09:48Z</time>
+<extensions>
+<ele src="gps">170.4</ele>
+<ele src="bar">225.7</ele>
+<speed src="gps">7.19</speed>
+<bpm>139</bpm>
+<rpm>88</rpm>
+<mbar>1002.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99004833" lon="36.34747333">
+<ele>225.7</ele>
+<speed>7.33</speed>
+<time>2011-11-03T09:09:49Z</time>
+<extensions>
+<ele src="gps">170.0</ele>
+<ele src="bar">225.7</ele>
+<speed src="gps">7.33</speed>
+<bpm>141</bpm>
+<rpm>89</rpm>
+<mbar>1002.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99004833" lon="36.34737139">
+<ele>225.0</ele>
+<speed>7.38</speed>
+<time>2011-11-03T09:09:50Z</time>
+<extensions>
+<ele src="gps">169.7</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">7.38</speed>
+<bpm>142</bpm>
+<rpm>89</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99003972" lon="36.34726833">
+<ele>224.5</ele>
+<speed>7.50</speed>
+<time>2011-11-03T09:09:51Z</time>
+<extensions>
+<ele src="gps">169.6</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">7.50</speed>
+<bpm>144</bpm>
+<rpm>88</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99004167" lon="36.34716500">
+<ele>224.0</ele>
+<speed>7.38</speed>
+<time>2011-11-03T09:09:52Z</time>
+<extensions>
+<ele src="gps">169.4</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">7.38</speed>
+<bpm>144</bpm>
+<rpm>88</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99003833" lon="36.34706139">
+<ele>224.5</ele>
+<speed>7.38</speed>
+<time>2011-11-03T09:09:53Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">7.38</speed>
+<bpm>144</bpm>
+<rpm>88</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99003500" lon="36.34696000">
+<ele>224.7</ele>
+<speed>7.25</speed>
+<time>2011-11-03T09:09:54Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">224.7</ele>
+<speed src="gps">7.25</speed>
+<bpm>144</bpm>
+<rpm>88</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99003500" lon="36.34686000">
+<ele>223.5</ele>
+<speed>7.02</speed>
+<time>2011-11-03T09:09:55Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">223.5</ele>
+<speed src="gps">7.02</speed>
+<bpm>143</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99003000" lon="36.34677000">
+<ele>223.0</ele>
+<speed>6.47</speed>
+<time>2011-11-03T09:09:56Z</time>
+<extensions>
+<ele src="gps">168.8</ele>
+<ele src="bar">223.0</ele>
+<speed src="gps">6.47</speed>
+<bpm>144</bpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.99001167" lon="36.34668972">
+<ele>223.0</ele>
+<speed>5.94</speed>
+<time>2011-11-03T09:09:57Z</time>
+<extensions>
+<ele src="gps">168.0</ele>
+<ele src="bar">223.0</ele>
+<speed src="gps">5.94</speed>
+<bpm>143</bpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98997333" lon="36.34663806">
+<ele>223.7</ele>
+<speed>5.44</speed>
+<time>2011-11-03T09:09:58Z</time>
+<extensions>
+<ele src="gps">167.1</ele>
+<ele src="bar">223.7</ele>
+<speed src="gps">5.44</speed>
+<bpm>143</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98992333" lon="36.34662333">
+<ele>224.0</ele>
+<speed>5.55</speed>
+<time>2011-11-03T09:09:59Z</time>
+<extensions>
+<ele src="gps">166.8</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">5.55</speed>
+<bpm>144</bpm>
+<rpm>73</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98986833" lon="36.34662667">
+<ele>224.0</ele>
+<speed>6.16</speed>
+<time>2011-11-03T09:10:00Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.16</speed>
+<bpm>144</bpm>
+<rpm>73</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98981167" lon="36.34663667">
+<ele>224.0</ele>
+<speed>6.36</speed>
+<time>2011-11-03T09:10:01Z</time>
+<extensions>
+<ele src="gps">166.7</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.36</speed>
+<bpm>144</bpm>
+<rpm>74</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98975333" lon="36.34664167">
+<ele>224.0</ele>
+<speed>6.52</speed>
+<time>2011-11-03T09:10:02Z</time>
+<extensions>
+<ele src="gps">167.2</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.52</speed>
+<bpm>143</bpm>
+<rpm>73</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98969500" lon="36.34664167">
+<ele>224.0</ele>
+<speed>6.25</speed>
+<time>2011-11-03T09:10:03Z</time>
+<extensions>
+<ele src="gps">167.6</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.25</speed>
+<bpm>143</bpm>
+<rpm>74</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98963833" lon="36.34664667">
+<ele>224.0</ele>
+<speed>6.25</speed>
+<time>2011-11-03T09:10:04Z</time>
+<extensions>
+<ele src="gps">168.0</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.25</speed>
+<bpm>142</bpm>
+<rpm>72</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98958167" lon="36.34665000">
+<ele>224.0</ele>
+<speed>6.25</speed>
+<time>2011-11-03T09:10:05Z</time>
+<extensions>
+<ele src="gps">168.2</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.25</speed>
+<bpm>142</bpm>
+<rpm>74</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98952500" lon="36.34665167">
+<ele>224.0</ele>
+<speed>6.22</speed>
+<time>2011-11-03T09:10:06Z</time>
+<extensions>
+<ele src="gps">168.4</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.22</speed>
+<bpm>142</bpm>
+<rpm>72</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98947000" lon="36.34665500">
+<ele>224.0</ele>
+<speed>6.05</speed>
+<time>2011-11-03T09:10:07Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">6.05</speed>
+<bpm>140</bpm>
+<rpm>72</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98941667" lon="36.34666139">
+<ele>224.5</ele>
+<speed>5.75</speed>
+<time>2011-11-03T09:10:08Z</time>
+<extensions>
+<ele src="gps">169.0</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">5.75</speed>
+<bpm>140</bpm>
+<rpm>72</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98936833" lon="36.34667167">
+<ele>224.5</ele>
+<speed>5.38</speed>
+<time>2011-11-03T09:10:09Z</time>
+<extensions>
+<ele src="gps">169.3</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">5.38</speed>
+<bpm>142</bpm>
+<rpm>72</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98932667" lon="36.34668333">
+<ele>224.7</ele>
+<speed>4.50</speed>
+<time>2011-11-03T09:10:10Z</time>
+<extensions>
+<ele src="gps">169.7</ele>
+<ele src="bar">224.7</ele>
+<speed src="gps">4.50</speed>
+<bpm>141</bpm>
+<rpm>14</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98929833" lon="36.34668833">
+<ele>225.0</ele>
+<speed>2.86</speed>
+<time>2011-11-03T09:10:11Z</time>
+<extensions>
+<ele src="gps">170.0</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">2.86</speed>
+<bpm>141</bpm>
+<rpm>14</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98927833" lon="36.34669167">
+<ele>224.2</ele>
+<speed>2.08</speed>
+<time>2011-11-03T09:10:12Z</time>
+<extensions>
+<ele src="gps">170.3</ele>
+<ele src="bar">224.2</ele>
+<speed src="gps">2.08</speed>
+<bpm>142</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98926000" lon="36.34670000">
+<ele>224.2</ele>
+<speed>2.00</speed>
+<time>2011-11-03T09:10:13Z</time>
+<extensions>
+<ele src="gps">170.5</ele>
+<ele src="bar">224.2</ele>
+<speed src="gps">2.00</speed>
+<bpm>142</bpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98924000" lon="36.34670306">
+<ele>224.0</ele>
+<speed>2.05</speed>
+<time>2011-11-03T09:10:14Z</time>
+<extensions>
+<ele src="gps">170.6</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">2.05</speed>
+<bpm>142</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98921472" lon="36.34671500">
+<ele>224.0</ele>
+<speed>2.66</speed>
+<time>2011-11-03T09:10:15Z</time>
+<extensions>
+<ele src="gps">170.5</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">2.66</speed>
+<bpm>136</bpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98918167" lon="36.34671806">
+<ele>224.0</ele>
+<speed>3.58</speed>
+<time>2011-11-03T09:10:16Z</time>
+<extensions>
+<ele src="gps">170.2</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">3.58</speed>
+<bpm>136</bpm>
+<rpm>34</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98915167" lon="36.34668167">
+<ele>224.0</ele>
+<speed>4.19</speed>
+<time>2011-11-03T09:10:17Z</time>
+<extensions>
+<ele src="gps">170.3</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">4.19</speed>
+<bpm>136</bpm>
+<rpm>55</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98913500" lon="36.34661833">
+<ele>224.0</ele>
+<speed>4.86</speed>
+<time>2011-11-03T09:10:18Z</time>
+<extensions>
+<ele src="gps">170.3</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">4.86</speed>
+<bpm>136</bpm>
+<rpm>63</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98912000" lon="36.34654500">
+<ele>224.0</ele>
+<speed>5.63</speed>
+<time>2011-11-03T09:10:19Z</time>
+<extensions>
+<ele src="gps">170.2</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">5.63</speed>
+<bpm>136</bpm>
+<rpm>71</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98910500" lon="36.34646000">
+<ele>223.5</ele>
+<speed>6.30</speed>
+<time>2011-11-03T09:10:20Z</time>
+<extensions>
+<ele src="gps">170.1</ele>
+<ele src="bar">223.5</ele>
+<speed src="gps">6.30</speed>
+<bpm>137</bpm>
+<rpm>71</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98909167" lon="36.34636667">
+<ele>223.5</ele>
+<speed>6.94</speed>
+<time>2011-11-03T09:10:21Z</time>
+<extensions>
+<ele src="gps">170.1</ele>
+<ele src="bar">223.5</ele>
+<speed src="gps">6.94</speed>
+<bpm>139</bpm>
+<rpm>83</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98907833" lon="36.34626500">
+<ele>223.2</ele>
+<speed>7.50</speed>
+<time>2011-11-03T09:10:22Z</time>
+<extensions>
+<ele src="gps">170.0</ele>
+<ele src="bar">223.2</ele>
+<speed src="gps">7.50</speed>
+<bpm>140</bpm>
+<rpm>96</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98906500" lon="36.34615472">
+<ele>225.2</ele>
+<speed>8.11</speed>
+<time>2011-11-03T09:10:23Z</time>
+<extensions>
+<ele src="gps">170.0</ele>
+<ele src="bar">225.2</ele>
+<speed src="gps">8.11</speed>
+<bpm>140</bpm>
+<rpm>96</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98905000" lon="36.34604000">
+<ele>225.2</ele>
+<speed>8.52</speed>
+<time>2011-11-03T09:10:24Z</time>
+<extensions>
+<ele src="gps">170.0</ele>
+<ele src="bar">225.2</ele>
+<speed src="gps">8.52</speed>
+<bpm>143</bpm>
+<rpm>103</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98903500" lon="36.34591667">
+<ele>226.0</ele>
+<speed>9.00</speed>
+<time>2011-11-03T09:10:25Z</time>
+<extensions>
+<ele src="gps">169.9</ele>
+<ele src="bar">226.0</ele>
+<speed src="gps">9.00</speed>
+<bpm>145</bpm>
+<rpm>100</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98901806" lon="36.34579472">
+<ele>226.0</ele>
+<speed>9.02</speed>
+<time>2011-11-03T09:10:26Z</time>
+<extensions>
+<ele src="gps">169.8</ele>
+<ele src="bar">226.0</ele>
+<speed src="gps">9.02</speed>
+<bpm>145</bpm>
+<rpm>75</rpm>
+<mbar>1002.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98900333" lon="36.34567000">
+<ele>225.0</ele>
+<speed>9.13</speed>
+<time>2011-11-03T09:10:27Z</time>
+<extensions>
+<ele src="gps">169.8</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">9.13</speed>
+<bpm>149</bpm>
+<rpm>75</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98898833" lon="36.34554167">
+<ele>225.0</ele>
+<speed>9.38</speed>
+<time>2011-11-03T09:10:28Z</time>
+<extensions>
+<ele src="gps">169.6</ele>
+<ele src="bar">225.0</ele>
+<speed src="gps">9.38</speed>
+<bpm>151</bpm>
+<rpm>77</rpm>
+<mbar>1002.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98897167" lon="36.34541167">
+<ele>224.5</ele>
+<speed>9.50</speed>
+<time>2011-11-03T09:10:29Z</time>
+<extensions>
+<ele src="gps">169.5</ele>
+<ele src="bar">224.5</ele>
+<speed src="gps">9.50</speed>
+<bpm>152</bpm>
+<rpm>77</rpm>
+<mbar>1002.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98895667" lon="36.34527833">
+<ele>224.0</ele>
+<speed>9.72</speed>
+<time>2011-11-03T09:10:30Z</time>
+<extensions>
+<ele src="gps">169.4</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">9.72</speed>
+<bpm>154</bpm>
+<rpm>78</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98894000" lon="36.34514833">
+<ele>224.0</ele>
+<speed>9.61</speed>
+<time>2011-11-03T09:10:31Z</time>
+<extensions>
+<ele src="gps">169.0</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">9.61</speed>
+<bpm>155</bpm>
+<rpm>79</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98892167" lon="36.34501472">
+<ele>224.0</ele>
+<speed>9.72</speed>
+<time>2011-11-03T09:10:32Z</time>
+<extensions>
+<ele src="gps">168.8</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">9.72</speed>
+<bpm>158</bpm>
+<rpm>79</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98890333" lon="36.34488333">
+<ele>224.0</ele>
+<speed>9.66</speed>
+<time>2011-11-03T09:10:33Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">9.66</speed>
+<bpm>158</bpm>
+<rpm>79</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98888500" lon="36.34475167">
+<ele>224.0</ele>
+<speed>9.66</speed>
+<time>2011-11-03T09:10:34Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">224.0</ele>
+<speed src="gps">9.66</speed>
+<bpm>158</bpm>
+<rpm>78</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98886806" lon="36.34462000">
+<ele>223.5</ele>
+<speed>9.61</speed>
+<time>2011-11-03T09:10:35Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">223.5</ele>
+<speed src="gps">9.61</speed>
+<bpm>160</bpm>
+<rpm>78</rpm>
+<mbar>1002.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98885000" lon="36.34448833">
+<ele>223.0</ele>
+<speed>9.55</speed>
+<time>2011-11-03T09:10:36Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">223.0</ele>
+<speed src="gps">9.55</speed>
+<bpm>160</bpm>
+<rpm>78</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98883333" lon="36.34435667">
+<ele>223.0</ele>
+<speed>9.50</speed>
+<time>2011-11-03T09:10:37Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">223.0</ele>
+<speed src="gps">9.50</speed>
+<bpm>161</bpm>
+<rpm>76</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98881639" lon="36.34422639">
+<ele>222.2</ele>
+<speed>9.50</speed>
+<time>2011-11-03T09:10:38Z</time>
+<extensions>
+<ele src="gps">168.8</ele>
+<ele src="bar">222.2</ele>
+<speed src="gps">9.50</speed>
+<bpm>161</bpm>
+<rpm>76</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98880139" lon="36.34409667">
+<ele>222.2</ele>
+<speed>9.38</speed>
+<time>2011-11-03T09:10:39Z</time>
+<extensions>
+<ele src="gps">169.1</ele>
+<ele src="bar">222.2</ele>
+<speed src="gps">9.38</speed>
+<bpm>161</bpm>
+<rpm>76</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98878333" lon="36.34396833">
+<ele>222.5</ele>
+<speed>9.36</speed>
+<time>2011-11-03T09:10:40Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">222.5</ele>
+<speed src="gps">9.36</speed>
+<bpm>161</bpm>
+<rpm>76</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98876472" lon="36.34384167">
+<ele>222.7</ele>
+<speed>9.25</speed>
+<time>2011-11-03T09:10:41Z</time>
+<extensions>
+<ele src="gps">169.4</ele>
+<ele src="bar">222.7</ele>
+<speed src="gps">9.25</speed>
+<bpm>161</bpm>
+<rpm>75</rpm>
+<mbar>1002.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98874833" lon="36.34371500">
+<ele>222.0</ele>
+<speed>9.13</speed>
+<time>2011-11-03T09:10:42Z</time>
+<extensions>
+<ele src="gps">169.5</ele>
+<ele src="bar">222.0</ele>
+<speed src="gps">9.13</speed>
+<bpm>161</bpm>
+<rpm>75</rpm>
+<mbar>1002.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98873167" lon="36.34359000">
+<ele>221.5</ele>
+<speed>9.08</speed>
+<time>2011-11-03T09:10:43Z</time>
+<extensions>
+<ele src="gps">169.6</ele>
+<ele src="bar">221.5</ele>
+<speed src="gps">9.08</speed>
+<bpm>161</bpm>
+<rpm>74</rpm>
+<mbar>1002.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98871500" lon="36.34346500">
+<ele>221.5</ele>
+<speed>9.08</speed>
+<time>2011-11-03T09:10:44Z</time>
+<extensions>
+<ele src="gps">169.6</ele>
+<ele src="bar">221.5</ele>
+<speed src="gps">9.08</speed>
+<bpm>161</bpm>
+<rpm>74</rpm>
+<mbar>1002.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98869833" lon="36.34333972">
+<ele>221.0</ele>
+<speed>9.08</speed>
+<time>2011-11-03T09:10:45Z</time>
+<extensions>
+<ele src="gps">169.5</ele>
+<ele src="bar">221.0</ele>
+<speed src="gps">9.08</speed>
+<bpm>160</bpm>
+<rpm>74</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98868167" lon="36.34321500">
+<ele>221.0</ele>
+<speed>9.02</speed>
+<time>2011-11-03T09:10:46Z</time>
+<extensions>
+<ele src="gps">169.4</ele>
+<ele src="bar">221.0</ele>
+<speed src="gps">9.02</speed>
+<bpm>161</bpm>
+<rpm>73</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98866500" lon="36.34309167">
+<ele>221.5</ele>
+<speed>9.00</speed>
+<time>2011-11-03T09:10:47Z</time>
+<extensions>
+<ele src="gps">169.3</ele>
+<ele src="bar">221.5</ele>
+<speed src="gps">9.00</speed>
+<bpm>160</bpm>
+<rpm>64</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98864639" lon="36.34297167">
+<ele>222.0</ele>
+<speed>8.66</speed>
+<time>2011-11-03T09:10:48Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">222.0</ele>
+<speed src="gps">8.66</speed>
+<bpm>159</bpm>
+<rpm>64</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98863167" lon="36.34285500">
+<ele>221.5</ele>
+<speed>8.41</speed>
+<time>2011-11-03T09:10:49Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">221.5</ele>
+<speed src="gps">8.41</speed>
+<bpm>159</bpm>
+<rpm>26</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98861833" lon="36.34274139">
+<ele>221.5</ele>
+<speed>8.16</speed>
+<time>2011-11-03T09:10:50Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">221.5</ele>
+<speed src="gps">8.16</speed>
+<bpm>158</bpm>
+<rpm>26</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98860333" lon="36.34263167">
+<ele>221.2</ele>
+<speed>7.97</speed>
+<time>2011-11-03T09:10:51Z</time>
+<extensions>
+<ele src="gps">169.3</ele>
+<ele src="bar">221.2</ele>
+<speed src="gps">7.97</speed>
+<bpm>157</bpm>
+<rpm>13</rpm>
+<mbar>1002.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98859000" lon="36.34252639">
+<ele>220.2</ele>
+<speed>7.63</speed>
+<time>2011-11-03T09:10:52Z</time>
+<extensions>
+<ele src="gps">169.3</ele>
+<ele src="bar">220.2</ele>
+<speed src="gps">7.63</speed>
+<bpm>157</bpm>
+<rpm>13</rpm>
+<mbar>1002.8</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98857833" lon="36.34242333">
+<ele>220.0</ele>
+<speed>7.38</speed>
+<time>2011-11-03T09:10:53Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">7.38</speed>
+<bpm>158</bpm>
+<rpm>13</rpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98856806" lon="36.34232167">
+<ele>220.0</ele>
+<speed>7.25</speed>
+<time>2011-11-03T09:10:54Z</time>
+<extensions>
+<ele src="gps">169.2</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">7.25</speed>
+<bpm>158</bpm>
+<rpm>13</rpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98855833" lon="36.34222333">
+<ele>220.0</ele>
+<speed>6.97</speed>
+<time>2011-11-03T09:10:55Z</time>
+<extensions>
+<ele src="gps">169.1</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">6.97</speed>
+<bpm>157</bpm>
+<rpm>13</rpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98854806" lon="36.34212833">
+<ele>220.0</ele>
+<speed>6.77</speed>
+<time>2011-11-03T09:10:56Z</time>
+<extensions>
+<ele src="gps">169.0</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">6.77</speed>
+<bpm>155</bpm>
+<rpm>13</rpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98853972" lon="36.34203667">
+<ele>220.0</ele>
+<speed>6.58</speed>
+<time>2011-11-03T09:10:57Z</time>
+<extensions>
+<ele src="gps">169.0</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">6.58</speed>
+<bpm>152</bpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98853000" lon="36.34194667">
+<ele>220.0</ele>
+<speed>6.41</speed>
+<time>2011-11-03T09:10:58Z</time>
+<extensions>
+<ele src="gps">169.0</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">6.41</speed>
+<bpm>152</bpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98852000" lon="36.34185972">
+<ele>219.5</ele>
+<speed>6.16</speed>
+<time>2011-11-03T09:10:59Z</time>
+<extensions>
+<ele src="gps">168.9</ele>
+<ele src="bar">219.5</ele>
+<speed src="gps">6.16</speed>
+<bpm>152</bpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98850806" lon="36.34177667">
+<ele>219.2</ele>
+<speed>6.00</speed>
+<time>2011-11-03T09:11:00Z</time>
+<extensions>
+<ele src="gps">168.7</ele>
+<ele src="bar">219.2</ele>
+<speed src="gps">6.00</speed>
+<bpm>151</bpm>
+<mbar>1002.9</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98849667" lon="36.34169472">
+<ele>219.0</ele>
+<speed>5.88</speed>
+<time>2011-11-03T09:11:01Z</time>
+<extensions>
+<ele src="gps">168.6</ele>
+<ele src="bar">219.0</ele>
+<speed src="gps">5.88</speed>
+<bpm>151</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98848500" lon="36.34161333">
+<ele>219.0</ele>
+<speed>5.80</speed>
+<time>2011-11-03T09:11:02Z</time>
+<extensions>
+<ele src="gps">168.4</ele>
+<ele src="bar">219.0</ele>
+<speed src="gps">5.80</speed>
+<bpm>149</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98847500" lon="36.34153500">
+<ele>219.7</ele>
+<speed>5.63</speed>
+<time>2011-11-03T09:11:03Z</time>
+<extensions>
+<ele src="gps">168.4</ele>
+<ele src="bar">219.7</ele>
+<speed src="gps">5.63</speed>
+<bpm>149</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98846306" lon="36.34145833">
+<ele>219.7</ele>
+<speed>5.55</speed>
+<time>2011-11-03T09:11:04Z</time>
+<extensions>
+<ele src="gps">168.3</ele>
+<ele src="bar">219.7</ele>
+<speed src="gps">5.55</speed>
+<bpm>148</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98845500" lon="36.34138333">
+<ele>220.0</ele>
+<speed>5.38</speed>
+<time>2011-11-03T09:11:05Z</time>
+<extensions>
+<ele src="gps">168.2</ele>
+<ele src="bar">220.0</ele>
+<speed src="gps">5.38</speed>
+<bpm>148</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98844667" lon="36.34130667">
+<ele>218.5</ele>
+<speed>5.33</speed>
+<time>2011-11-03T09:11:06Z</time>
+<extensions>
+<ele src="gps">168.0</ele>
+<ele src="bar">218.5</ele>
+<speed src="gps">5.33</speed>
+<bpm>147</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98844000" lon="36.34123333">
+<ele>218.5</ele>
+<speed>5.22</speed>
+<time>2011-11-03T09:11:07Z</time>
+<extensions>
+<ele src="gps">167.8</ele>
+<ele src="bar">218.5</ele>
+<speed src="gps">5.22</speed>
+<bpm>145</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98843306" lon="36.34115972">
+<ele>218.0</ele>
+<speed>5.19</speed>
+<time>2011-11-03T09:11:08Z</time>
+<extensions>
+<ele src="gps">167.6</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">5.19</speed>
+<bpm>144</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98842833" lon="36.34109333">
+<ele>218.0</ele>
+<speed>4.72</speed>
+<time>2011-11-03T09:11:09Z</time>
+<extensions>
+<ele src="gps">167.3</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">4.72</speed>
+<bpm>142</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98842139" lon="36.34103306">
+<ele>218.0</ele>
+<speed>4.19</speed>
+<time>2011-11-03T09:11:10Z</time>
+<extensions>
+<ele src="gps">167.0</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">4.19</speed>
+<bpm>142</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98841667" lon="36.34098306">
+<ele>218.0</ele>
+<speed>3.52</speed>
+<time>2011-11-03T09:11:11Z</time>
+<extensions>
+<ele src="gps">166.8</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">3.52</speed>
+<bpm>142</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98841167" lon="36.34094139">
+<ele>218.0</ele>
+<speed>2.86</speed>
+<time>2011-11-03T09:11:12Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">2.86</speed>
+<bpm>141</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840667" lon="36.34091000">
+<ele>218.7</ele>
+<speed>2.08</speed>
+<time>2011-11-03T09:11:13Z</time>
+<extensions>
+<ele src="gps">166.5</ele>
+<ele src="bar">218.7</ele>
+<speed src="gps">2.08</speed>
+<bpm>141</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840333" lon="36.34089000">
+<ele>218.7</ele>
+<speed>1.33</speed>
+<time>2011-11-03T09:11:14Z</time>
+<extensions>
+<ele src="gps">166.5</ele>
+<ele src="bar">218.7</ele>
+<speed src="gps">1.33</speed>
+<bpm>140</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840167" lon="36.34087333">
+<ele>219.0</ele>
+<speed>1.05</speed>
+<time>2011-11-03T09:11:15Z</time>
+<extensions>
+<ele src="gps">166.4</ele>
+<ele src="bar">219.0</ele>
+<speed src="gps">1.05</speed>
+<bpm>138</bpm>
+<mbar>1003.0</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34085833">
+<ele>218.0</ele>
+<speed>0.97</speed>
+<time>2011-11-03T09:11:16Z</time>
+<extensions>
+<ele src="gps">166.4</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">0.97</speed>
+<bpm>137</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34084500">
+<ele>217.5</ele>
+<speed>0.66</speed>
+<time>2011-11-03T09:11:17Z</time>
+<extensions>
+<ele src="gps">166.4</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">0.66</speed>
+<bpm>136</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34084139">
+<ele>217.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:18Z</time>
+<extensions>
+<ele src="gps">166.4</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>136</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34084000">
+<ele>217.7</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:19Z</time>
+<extensions>
+<ele src="gps">166.5</ele>
+<ele src="bar">217.7</ele>
+<speed src="gps">0.00</speed>
+<bpm>133</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34083833">
+<ele>217.2</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:20Z</time>
+<extensions>
+<ele src="gps">166.5</ele>
+<ele src="bar">217.2</ele>
+<speed src="gps">0.00</speed>
+<bpm>132</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34083667">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:21Z</time>
+<extensions>
+<ele src="gps">166.5</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>132</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839667" lon="36.34083500">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:22Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>133</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839667" lon="36.34083306">
+<ele>217.7</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:23Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">217.7</ele>
+<speed src="gps">0.00</speed>
+<bpm>133</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34083167">
+<ele>217.7</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:24Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">217.7</ele>
+<speed src="gps">0.00</speed>
+<bpm>133</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34083000">
+<ele>217.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:25Z</time>
+<extensions>
+<ele src="gps">166.7</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>132</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34083000">
+<ele>217.2</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:26Z</time>
+<extensions>
+<ele src="gps">166.7</ele>
+<ele src="bar">217.2</ele>
+<speed src="gps">0.00</speed>
+<bpm>132</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082833">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:27Z</time>
+<extensions>
+<ele src="gps">166.8</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>120</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082833">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:28Z</time>
+<extensions>
+<ele src="gps">166.8</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>116</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082667">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:29Z</time>
+<extensions>
+<ele src="gps">166.9</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>108</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082500">
+<ele>216.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:30Z</time>
+<extensions>
+<ele src="gps">167.0</ele>
+<ele src="bar">216.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>109</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082500">
+<ele>216.2</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:31Z</time>
+<extensions>
+<ele src="gps">167.1</ele>
+<ele src="bar">216.2</ele>
+<speed src="gps">0.00</speed>
+<bpm>109</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082333">
+<ele>216.5</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:32Z</time>
+<extensions>
+<ele src="gps">167.2</ele>
+<ele src="bar">216.5</ele>
+<speed src="gps">0.00</speed>
+<bpm>115</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34082167">
+<ele>216.7</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:33Z</time>
+<extensions>
+<ele src="gps">167.2</ele>
+<ele src="bar">216.7</ele>
+<speed src="gps">0.00</speed>
+<bpm>117</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840000" lon="36.34081806">
+<ele>217.0</ele>
+<speed>0.00</speed>
+<time>2011-11-03T09:11:34Z</time>
+<extensions>
+<ele src="gps">167.3</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.00</speed>
+<bpm>118</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840000" lon="36.34081333">
+<ele>217.0</ele>
+<speed>0.33</speed>
+<time>2011-11-03T09:11:35Z</time>
+<extensions>
+<ele src="gps">167.4</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.33</speed>
+<bpm>119</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840000" lon="36.34080500">
+<ele>217.0</ele>
+<speed>0.50</speed>
+<time>2011-11-03T09:11:36Z</time>
+<extensions>
+<ele src="gps">167.3</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">0.50</speed>
+<bpm>116</bpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840000" lon="36.34079500">
+<ele>217.7</ele>
+<speed>0.61</speed>
+<time>2011-11-03T09:11:37Z</time>
+<extensions>
+<ele src="gps">167.4</ele>
+<ele src="bar">217.7</ele>
+<speed src="gps">0.61</speed>
+<bpm>111</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98840000" lon="36.34077500">
+<ele>218.0</ele>
+<speed>1.41</speed>
+<time>2011-11-03T09:11:38Z</time>
+<extensions>
+<ele src="gps">167.3</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">1.41</speed>
+<bpm>112</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839806" lon="36.34074306">
+<ele>218.0</ele>
+<speed>2.30</speed>
+<time>2011-11-03T09:11:39Z</time>
+<extensions>
+<ele src="gps">167.2</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">2.30</speed>
+<bpm>116</bpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98839500" lon="36.34070000">
+<ele>216.5</ele>
+<speed>3.08</speed>
+<time>2011-11-03T09:11:40Z</time>
+<extensions>
+<ele src="gps">167.0</ele>
+<ele src="bar">216.5</ele>
+<speed src="gps">3.08</speed>
+<bpm>115</bpm>
+<rpm>36</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98838833" lon="36.34064833">
+<ele>216.5</ele>
+<speed>3.88</speed>
+<time>2011-11-03T09:11:41Z</time>
+<extensions>
+<ele src="gps">166.9</ele>
+<ele src="bar">216.5</ele>
+<speed src="gps">3.88</speed>
+<bpm>119</bpm>
+<rpm>36</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98838167" lon="36.34059000">
+<ele>217.0</ele>
+<speed>4.19</speed>
+<time>2011-11-03T09:11:42Z</time>
+<extensions>
+<ele src="gps">166.9</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">4.19</speed>
+<bpm>122</bpm>
+<rpm>49</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98837167" lon="36.34052639">
+<ele>217.5</ele>
+<speed>4.77</speed>
+<time>2011-11-03T09:11:43Z</time>
+<extensions>
+<ele src="gps">166.9</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">4.77</speed>
+<bpm>124</bpm>
+<rpm>49</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98836333" lon="36.34045806">
+<ele>217.5</ele>
+<speed>5.08</speed>
+<time>2011-11-03T09:11:44Z</time>
+<extensions>
+<ele src="gps">166.7</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">5.08</speed>
+<bpm>128</bpm>
+<rpm>53</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98835139" lon="36.34038167">
+<ele>217.2</ele>
+<speed>5.69</speed>
+<time>2011-11-03T09:11:45Z</time>
+<extensions>
+<ele src="gps">166.6</ele>
+<ele src="bar">217.2</ele>
+<speed src="gps">5.69</speed>
+<bpm>132</bpm>
+<rpm>60</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98834167" lon="36.34029667">
+<ele>217.0</ele>
+<speed>6.30</speed>
+<time>2011-11-03T09:11:46Z</time>
+<extensions>
+<ele src="gps">166.4</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">6.30</speed>
+<bpm>133</bpm>
+<rpm>67</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98832667" lon="36.34020333">
+<ele>217.5</ele>
+<speed>6.94</speed>
+<time>2011-11-03T09:11:47Z</time>
+<extensions>
+<ele src="gps">166.2</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">6.94</speed>
+<bpm>137</bpm>
+<rpm>77</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98831167" lon="36.34010333">
+<ele>217.2</ele>
+<speed>7.50</speed>
+<time>2011-11-03T09:11:48Z</time>
+<extensions>
+<ele src="gps">166.1</ele>
+<ele src="bar">217.2</ele>
+<speed src="gps">7.50</speed>
+<bpm>138</bpm>
+<rpm>81</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98829500" lon="36.33999500">
+<ele>217.0</ele>
+<speed>8.05</speed>
+<time>2011-11-03T09:11:49Z</time>
+<extensions>
+<ele src="gps">165.9</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">8.05</speed>
+<bpm>141</bpm>
+<rpm>84</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98827500" lon="36.33988333">
+<ele>217.5</ele>
+<speed>8.47</speed>
+<time>2011-11-03T09:11:50Z</time>
+<extensions>
+<ele src="gps">165.8</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">8.47</speed>
+<bpm>143</bpm>
+<rpm>89</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98825500" lon="36.33976500">
+<ele>217.5</ele>
+<speed>8.77</speed>
+<time>2011-11-03T09:11:51Z</time>
+<extensions>
+<ele src="gps">165.7</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">8.77</speed>
+<bpm>144</bpm>
+<rpm>89</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98823333" lon="36.33964500">
+<ele>218.0</ele>
+<speed>9.00</speed>
+<time>2011-11-03T09:11:52Z</time>
+<extensions>
+<ele src="gps">165.5</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">9.00</speed>
+<bpm>147</bpm>
+<rpm>95</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98820972" lon="36.33952333">
+<ele>218.0</ele>
+<speed>9.25</speed>
+<time>2011-11-03T09:11:53Z</time>
+<extensions>
+<ele src="gps">165.3</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">9.25</speed>
+<bpm>148</bpm>
+<rpm>95</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98819000" lon="36.33939667">
+<ele>218.0</ele>
+<speed>9.38</speed>
+<time>2011-11-03T09:11:54Z</time>
+<extensions>
+<ele src="gps">165.1</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">9.38</speed>
+<bpm>149</bpm>
+<rpm>86</rpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98817167" lon="36.33927000">
+<ele>218.5</ele>
+<speed>9.38</speed>
+<time>2011-11-03T09:11:55Z</time>
+<extensions>
+<ele src="gps">164.9</ele>
+<ele src="bar">218.5</ele>
+<speed src="gps">9.38</speed>
+<bpm>151</bpm>
+<rpm>74</rpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98815333" lon="36.33914333">
+<ele>218.5</ele>
+<speed>9.30</speed>
+<time>2011-11-03T09:11:56Z</time>
+<extensions>
+<ele src="gps">164.7</ele>
+<ele src="bar">218.5</ele>
+<speed src="gps">9.30</speed>
+<bpm>151</bpm>
+<rpm>75</rpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98813500" lon="36.33901833">
+<ele>218.7</ele>
+<speed>9.25</speed>
+<time>2011-11-03T09:11:57Z</time>
+<extensions>
+<ele src="gps">164.6</ele>
+<ele src="bar">218.7</ele>
+<speed src="gps">9.25</speed>
+<bpm>153</bpm>
+<rpm>74</rpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98811139" lon="36.33889667">
+<ele>218.0</ele>
+<speed>9.19</speed>
+<time>2011-11-03T09:11:58Z</time>
+<extensions>
+<ele src="gps">164.4</ele>
+<ele src="bar">218.0</ele>
+<speed src="gps">9.19</speed>
+<bpm>154</bpm>
+<rpm>74</rpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98808500" lon="36.33877306">
+<ele>217.5</ele>
+<speed>9.30</speed>
+<time>2011-11-03T09:11:59Z</time>
+<extensions>
+<ele src="gps">164.2</ele>
+<ele src="bar">217.5</ele>
+<speed src="gps">9.30</speed>
+<bpm>155</bpm>
+<rpm>75</rpm>
+<mbar>1003.1</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98805667" lon="36.33865167">
+<ele>217.0</ele>
+<speed>9.36</speed>
+<time>2011-11-03T09:12:00Z</time>
+<extensions>
+<ele src="gps">164.1</ele>
+<ele src="bar">217.0</ele>
+<speed src="gps">9.36</speed>
+<bpm>156</bpm>
+<mbar>1003.2</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98802500" lon="36.33852833">
+<ele>216.5</ele>
+<speed>9.50</speed>
+<time>2011-11-03T09:12:01Z</time>
+<extensions>
+<ele src="gps">163.9</ele>
+<ele src="bar">216.5</ele>
+<speed src="gps">9.50</speed>
+<bpm>157</bpm>
+<rpm>78</rpm>
+<mbar>1003.3</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98799333" lon="36.33840139">
+<ele>216.0</ele>
+<speed>9.72</speed>
+<time>2011-11-03T09:12:02Z</time>
+<extensions>
+<ele src="gps">163.8</ele>
+<ele src="bar">216.0</ele>
+<speed src="gps">9.72</speed>
+<bpm>157</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98796167" lon="36.33827472">
+<ele>216.0</ele>
+<speed>9.80</speed>
+<time>2011-11-03T09:12:03Z</time>
+<extensions>
+<ele src="gps">163.7</ele>
+<ele src="bar">216.0</ele>
+<speed src="gps">9.80</speed>
+<bpm>157</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98793000" lon="36.33814667">
+<ele>216.0</ele>
+<speed>9.86</speed>
+<time>2011-11-03T09:12:04Z</time>
+<extensions>
+<ele src="gps">163.5</ele>
+<ele src="bar">216.0</ele>
+<speed src="gps">9.86</speed>
+<bpm>158</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98789833" lon="36.33801833">
+<ele>215.5</ele>
+<speed>9.86</speed>
+<time>2011-11-03T09:12:05Z</time>
+<extensions>
+<ele src="gps">163.4</ele>
+<ele src="bar">215.5</ele>
+<speed src="gps">9.86</speed>
+<bpm>158</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98786472" lon="36.33789000">
+<ele>215.5</ele>
+<speed>9.86</speed>
+<time>2011-11-03T09:12:06Z</time>
+<extensions>
+<ele src="gps">163.2</ele>
+<ele src="bar">215.5</ele>
+<speed src="gps">9.86</speed>
+<bpm>159</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98783167" lon="36.33776167">
+<ele>215.2</ele>
+<speed>9.91</speed>
+<time>2011-11-03T09:12:07Z</time>
+<extensions>
+<ele src="gps">163.1</ele>
+<ele src="bar">215.2</ele>
+<speed src="gps">9.91</speed>
+<bpm>160</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98779833" lon="36.33763306">
+<ele>215.0</ele>
+<speed>9.91</speed>
+<time>2011-11-03T09:12:08Z</time>
+<extensions>
+<ele src="gps">162.9</ele>
+<ele src="bar">215.0</ele>
+<speed src="gps">9.91</speed>
+<bpm>160</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98776639" lon="36.33750500">
+<ele>215.0</ele>
+<speed>9.91</speed>
+<time>2011-11-03T09:12:09Z</time>
+<extensions>
+<ele src="gps">162.7</ele>
+<ele src="bar">215.0</ele>
+<speed src="gps">9.91</speed>
+<bpm>161</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98773333" lon="36.33737472">
+<ele>215.0</ele>
+<speed>9.97</speed>
+<time>2011-11-03T09:12:10Z</time>
+<extensions>
+<ele src="gps">162.6</ele>
+<ele src="bar">215.0</ele>
+<speed src="gps">9.97</speed>
+<bpm>160</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98770000" lon="36.33724667">
+<ele>215.0</ele>
+<speed>9.97</speed>
+<time>2011-11-03T09:12:11Z</time>
+<extensions>
+<ele src="gps">162.4</ele>
+<ele src="bar">215.0</ele>
+<speed src="gps">9.97</speed>
+<bpm>161</bpm>
+<rpm>80</rpm>
+<mbar>1003.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98766833" lon="36.33711667">
+<ele>215.5</ele>
+<speed>9.97</speed>
+<time>2011-11-03T09:12:12Z</time>
+<extensions>
+<ele src="gps">162.3</ele>
+<ele src="bar">215.5</ele>
+<speed src="gps">9.97</speed>
+<bpm>162</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98763500" lon="36.33698833">
+<ele>215.7</ele>
+<speed>9.91</speed>
+<time>2011-11-03T09:12:13Z</time>
+<extensions>
+<ele src="gps">162.1</ele>
+<ele src="bar">215.7</ele>
+<speed src="gps">9.91</speed>
+<bpm>162</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98760333" lon="36.33685833">
+<ele>215.7</ele>
+<speed>9.97</speed>
+<time>2011-11-03T09:12:14Z</time>
+<extensions>
+<ele src="gps">161.9</ele>
+<ele src="bar">215.7</ele>
+<speed src="gps">9.97</speed>
+<bpm>162</bpm>
+<rpm>80</rpm>
+<mbar>1003.4</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98757000" lon="36.33672833">
+<ele>215.0</ele>
+<speed>9.97</speed>
+<time>2011-11-03T09:12:15Z</time>
+<extensions>
+<ele src="gps">161.7</ele>
+<ele src="bar">215.0</ele>
+<speed src="gps">9.97</speed>
+<bpm>162</bpm>
+<rpm>81</rpm>
+<mbar>1003.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98753667" lon="36.33659667">
+<ele>214.5</ele>
+<speed>10.05</speed>
+<time>2011-11-03T09:12:16Z</time>
+<extensions>
+<ele src="gps">161.6</ele>
+<ele src="bar">214.5</ele>
+<speed src="gps">10.05</speed>
+<bpm>163</bpm>
+<rpm>81</rpm>
+<mbar>1003.5</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98750333" lon="36.33646333">
+<ele>213.2</ele>
+<speed>10.27</speed>
+<time>2011-11-03T09:12:17Z</time>
+<extensions>
+<ele src="gps">161.4</ele>
+<ele src="bar">213.2</ele>
+<speed src="gps">10.27</speed>
+<bpm>164</bpm>
+<rpm>83</rpm>
+<mbar>1003.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98746833" lon="36.33632833">
+<ele>213.2</ele>
+<speed>10.41</speed>
+<time>2011-11-03T09:12:18Z</time>
+<extensions>
+<ele src="gps">161.2</ele>
+<ele src="bar">213.2</ele>
+<speed src="gps">10.41</speed>
+<bpm>164</bpm>
+<rpm>85</rpm>
+<mbar>1003.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98743333" lon="36.33619139">
+<ele>213.5</ele>
+<speed>10.52</speed>
+<time>2011-11-03T09:12:19Z</time>
+<extensions>
+<ele src="gps">161.0</ele>
+<ele src="bar">213.5</ele>
+<speed src="gps">10.52</speed>
+<bpm>164</bpm>
+<rpm>86</rpm>
+<mbar>1003.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98739667" lon="36.33605333">
+<ele>213.7</ele>
+<speed>10.69</speed>
+<time>2011-11-03T09:12:20Z</time>
+<extensions>
+<ele src="gps">160.9</ele>
+<ele src="bar">213.7</ele>
+<speed src="gps">10.69</speed>
+<bpm>165</bpm>
+<rpm>87</rpm>
+<mbar>1003.6</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98736167" lon="36.33591500">
+<ele>212.5</ele>
+<speed>10.75</speed>
+<time>2011-11-03T09:12:21Z</time>
+<extensions>
+<ele src="gps">160.7</ele>
+<ele src="bar">212.5</ele>
+<speed src="gps">10.75</speed>
+<bpm>165</bpm>
+<rpm>87</rpm>
+<mbar>1003.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98732472" lon="36.33577333">
+<ele>212.5</ele>
+<speed>10.83</speed>
+<time>2011-11-03T09:12:22Z</time>
+<extensions>
+<ele src="gps">160.6</ele>
+<ele src="bar">212.5</ele>
+<speed src="gps">10.83</speed>
+<bpm>166</bpm>
+<rpm>88</rpm>
+<mbar>1003.7</mbar>
+</extensions>
+</trkpt>
+<trkpt lat="49.98728833" lon="36.33563333">
+<ele>211.7</ele>
+<speed>10.83</speed>
+<time>2011-11-03T09:12:23Z</time>
+<extensions>
+<ele src="gps">160.4</ele>
+<ele src="bar">211.7</ele>
+<speed src="gps">10.83</speed>
+<bpm>165</bpm>
+<rpm>87</rpm>
+<mbar>1003.8</mbar>
+</extensions>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

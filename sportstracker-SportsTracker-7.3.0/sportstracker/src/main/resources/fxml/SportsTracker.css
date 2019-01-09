@@ -1,0 +1,179 @@
+/********************************************
+ *                                          *
+ *   SportsTracker CSS definitions.         *
+ *                                          *
+ ********************************************/
+
+/* bold label for section headers */
+.label-header {
+    -fx-font-weight: bold;
+}
+
+/* bordered tab pane (otherwise frame is not visible) */
+.tabpane-bordered {
+    -fx-border-color: #c0c0c0;
+}
+
+/* table column header must use left alignment and not use bold font */
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-font-weight: normal;
+}
+
+/*******************************************/
+/*   Menu and ToolBar styles               */
+/*******************************************/
+
+/* Menu items in the menu bar: increase left padding (others are default from class menu-item) */
+.menuBarItem {
+    -fx-padding: 0.333333em 0.41777em 0.333333em 1em;  /* 4 5 4 12 */
+}
+
+/* Context menu items: use bigger gap between graphic and text (default = 4) */
+.contextMenuItem > .label {
+    -fx-graphic-text-gap: 0.666667em;  /* 8 */
+}
+
+/* Toolbar button style: transparent borderless buttons with a small padding and a larger
+   background which changes its color on hovering or clicking */
+.toolbarButton {
+    -fx-padding: 0.416667em 0.5em;  /* 5 6 */
+    -fx-background-insets: -1px;
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.toolbarButton:hover{
+    -fx-background-color: transparent, rgba(0,0,0,.1), rgba(0,0,0,.1), transparent;
+}
+
+.toolbarButton:armed {
+    -fx-background-color: transparent, rgba(0,0,0,.2), rgba(0,0,0,.2), transparent;
+}
+
+/* Definition of all toolbar button icons. */
+
+#btOpenHrmFile {
+    -fx-graphic: url("../icons/16/0049-folder-open.png");
+}
+
+#btSave {
+    -fx-graphic: url("../icons/16/0198-download2.png");
+}
+
+#btPrint {
+    -fx-graphic: url("../icons/16/0085-printer.png");
+}
+
+#btCalendarView {
+    -fx-graphic: url("../icons/16/0084-calendar.png");
+}
+
+#btExerciseListView {
+    -fx-graphic: url("../icons/16/0083-stopwatch.png");
+}
+
+#btNoteListView {
+    -fx-graphic: url("../icons/16/0039-file-text2.png");
+}
+
+#btWeightListView {
+    -fx-graphic: url("../icons/16/0168-meter2.png");
+}
+
+#btFilterExercises {
+    -fx-graphic: url("../icons/16/0135-search.png");
+}
+
+#btFilterDisable {
+    -fx-graphic: url("../icons/16/0137-zoom-out.png");
+}
+
+#btAddExercise {
+    -fx-graphic: url("../icons/16/st01-exercise-add.png");
+}
+
+#btAddNote {
+    -fx-graphic: url("../icons/16/st02-note-add.png");
+}
+
+#btAddWeight {
+    -fx-graphic: url("../icons/16/st03-weight-add.png");
+}
+
+#btEditEntry {
+    -fx-graphic: url("../icons/16/0006-pencil.png");
+}
+
+#btCopyEntry {
+    -fx-graphic: url("../icons/16/0045-copy.png");
+}
+
+#btDeleteEntry {
+    -fx-graphic: url("../icons/16/0173-bin.png");
+}
+
+#btViewHrm {
+    -fx-graphic: url("../icons/16/st04-heart.png");
+}
+
+#btSportTypeEditor {
+    -fx-graphic: url("../icons/16/0149-cog.png");
+}
+
+#btStatistics {
+    -fx-graphic: url("../icons/16/0065-calculator.png");
+}
+
+#btOverviewDiagram {
+    -fx-graphic: url("../icons/16/0156-stats-dots.png");
+}
+
+/* Definition of all (context) menu item icons. */
+
+#miCtxAddExercise > .label {
+    -fx-graphic: url("../icons/16/st01-exercise-add.png");
+}
+
+#miCtxAddNote .label {
+    -fx-graphic: url("../icons/16/st02-note-add.png");
+}
+
+#miCtxAddWeight .label {
+    -fx-graphic: url("../icons/16/st03-weight-add.png");
+}
+
+#miCtxEditEntry .label {
+    -fx-graphic: url("../icons/16/0006-pencil.png");
+}
+
+#miCtxCopyEntry .label {
+    -fx-graphic: url("../icons/16/0045-copy.png");
+}
+
+#miCtxDeleteEntry .label {
+    -fx-graphic: url("../icons/16/0173-bin.png");
+}
+
+/*******************************************/
+/*   Calendar View styles                  */
+/*******************************************/
+
+#btPreviousMonth {
+    -fx-graphic: url("../icons/16/st05-previous.png");
+}
+
+#btNextMonth {
+    -fx-graphic: url("../icons/16/st06-next.png");
+}
+
+#btPreviousYear {
+    -fx-graphic: url("../icons/16/st05-previous.png");
+}
+
+#btNextYear {
+    -fx-graphic: url("../icons/16/st06-next.png");
+}
+
+#btToday {
+    -fx-graphic: url("../icons/16/0001-home.png");
+}

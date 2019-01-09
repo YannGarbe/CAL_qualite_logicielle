@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>st-exerciseviewer</artifactId>
+    <name>st-exerciseviewer</name>
+    <version>7.3.0</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>de.saring</groupId>
+        <artifactId>st-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <!-- Additional dependencies -->
+        <dependency>
+            <groupId>de.saring</groupId>
+            <artifactId>st-util</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jxmapviewer</groupId>
+            <artifactId>jxmapviewer2</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.garmin.fit</groupId>
+            <artifactId>fit</artifactId>
+            <version>16.50</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Compiler plugin configuration: use groovy-eclipse-compiler for
+                 mixed Java/Groovy compilation (only needed in this module). -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerId>groovy-eclipse-compiler</compilerId>
+                    <verbose>false</verbose>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-compiler</artifactId>
+                        <version>2.9.1-01</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-batch</artifactId>
+                        <version>2.3.7-01</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

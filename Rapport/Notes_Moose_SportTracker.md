@@ -218,6 +218,25 @@ view treeLayout.
 view open.
 ```
 
-### Méthodes
+### Autres
 
-### Utilisation GProf
+``` console
+luPackages := self.
+view := RTMondrian new.
+view shape rectangle
+		width: [  :p | p numberOfMethods * 0.1] ;
+		height: [ :p | p numberOfLinesOfCode * 0.1] ;
+		"linearFillColor: #numberOfLinesOfCode within: self entities;"
+		color: [:p | p isAbstract ifTrue: [ Color red ] ifFalse: [ (p name includesSubstring:'Test') ifTrue: [ Color yellow ] ifFalse: [ (p name includesSubstring:'Main') ifTrue: [ Color blue ] ifFalse: [Color gray]]] ];
+		borderColor: Color lightGray.
+view nodes: luPackages.
+view edgesFrom: #superclass.
+view treeLayout.
+view open.
+
+self select: [ :c | c superclass isNotNil and: [c superclass isStub not ] ]
+
+```
+
+- Un seul main
+- 821 classes non commentées

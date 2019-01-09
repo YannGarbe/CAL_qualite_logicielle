@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="16.0" stylesheets="@../SportsTracker.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.saring.sportstracker.gui.dialogs.OverviewDialogController">
+    <children>
+        <VBox spacing="12.0">
+            <children>
+                <Label styleClass="label-header" text="%st.dlg.overview.time_range.text"/>
+                <HBox spacing="24.0">
+                    <children>
+                        <ChoiceBox fx:id="cbTimeRange">
+                            <VBox.margin>
+                                <Insets left="24.0"/>
+                            </VBox.margin>
+                        </ChoiceBox>
+                        <Spinner fx:id="spYear" prefWidth="90.0" />
+                    </children>
+                    <padding>
+                        <Insets left="24.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+        <StackPane fx:id="spDiagram" prefHeight="440.0" prefWidth="900.0"/>
+        <VBox spacing="12.0">
+            <children>
+                <Label styleClass="label-header" text="%st.dlg.overview.options.text"/>
+                <HBox fx:id="hBoxOptions" alignment="CENTER_LEFT" spacing="24.0">
+                    <padding>
+                        <Insets left="24.0"/>
+                    </padding>
+                    <children>
+                        <Label text="%st.dlg.overview.display.text"/>
+                        <ChoiceBox fx:id="cbDisplay"/>
+                        <HBox fx:id="hBoxSportTypeMode" alignment="CENTER_LEFT" spacing="24.0">
+                            <children>
+                                <Label text="%st.dlg.overview.for.text"/>
+                                <ChoiceBox fx:id="cbSportTypeMode"/>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hBoxSportTypeList" alignment="CENTER_LEFT" spacing="24.0">
+                            <children>
+                                <Label text="%st.dlg.overview.for_sport_type.text"/>
+                                <ChoiceBox fx:id="cbSportTypeList"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>
